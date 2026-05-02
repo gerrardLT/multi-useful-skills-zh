@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "impeccable",
+  "metadata": {
+    "description": "为 AI harness 提供设计流畅度。1 个 skill、23 个命令，以及一套精选的 anti-patterns，专门用于做出更好的前端设计。"
+  },
+  "owner": {
+    "name": "Paul Bakaus",
+    "email": "paul@paulbakaus.com"
+  },
+  "plugins": [
+    {
+      "name": "impeccable",
+      "description": "为前端开发提供设计流畅度。1 个 skill，含 23 个命令（如 /impeccable polish、/impeccable audit、/impeccable critique 等），并附带精选 anti-pattern 检测能力。",
+      "version": "3.0.4",
+      "author": {
+        "name": "Paul Bakaus",
+        "email": "paul@paulbakaus.com"
+      },
+      "source": "./plugin",
+      "category": "design",
+      "homepage": "https://impeccable.style",
+      "tags": ["design", "frontend", "ui", "ux", "skills", "commands"]
+    }
+  ]
+}

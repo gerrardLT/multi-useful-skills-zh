@@ -1,0 +1,17 @@
+{
+  "name": "Next.js (App Router)",
+  "config": {
+    "files": ["app/layout.tsx"],
+    "insertBefore": "</body>",
+    "commentSyntax": "jsx"
+  },
+  "sourceFiles": ["app/layout.tsx", "app/page.tsx"],
+  "generatedFiles": [],
+  "wrapCases": [
+    {
+      "name": "在源 TSX 中包裹 hero 标题",
+      "args": { "classes": "hero-title", "tag": "h1" },
+      "expectedFile": "app/page.tsx"
+    }
+  ]
+}

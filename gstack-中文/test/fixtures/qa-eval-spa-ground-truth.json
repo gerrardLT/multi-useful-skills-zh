@@ -1,0 +1,43 @@
+{
+  "fixture": "qa-eval-spa.html",
+  "bugs": [
+    {
+      "id": "broken-route",
+      "category": "functional",
+      "severity": "high",
+      "description": "产品导航链接指向 #/products（拼写错误）而不是 #/products — 显示“找不到页面”",
+      "detection_hint": "route|prodcts|typo|products|not found|broken link|navigation"
+    },
+    {
+      "id": "stale-cart-state",
+      "category": "functional",
+      "severity": "medium",
+      "description": "购物车计数在路线变化时持续存在——离开产品时永远不会重置",
+      "detection_hint": "cart|count|state|persist|reset|stale|navigation"
+    },
+    {
+      "id": "async-fetch-error",
+      "category": "functional",
+      "severity": "high",
+      "description": "产品列表短暂加载，1 秒后显示“错误：无法从 API 获取产品”",
+      "detection_hint": "error|fetch|products|API|loading|failed|async"
+    },
+    {
+      "id": "missing-aria-current",
+      "category": "accessibility",
+      "severity": "medium",
+      "description": "导航链接没有 aria-current 属性来指示活动路线",
+      "detection_hint": "aria|current|active|navigation|accessibility|a11y"
+    },
+    {
+      "id": "console-warn-leak",
+      "category": "console",
+      "severity": "medium",
+      "description": "console.warn 在每次路由更改时触发：“检测到可能的内存泄漏：11 个事件侦听器”",
+      "detection_hint": "console|warn|memory leak|listener|event|warning"
+    }
+  ],
+  "total_bugs": 5,
+  "minimum_detection": 2,
+  "max_false_positives": 5
+}

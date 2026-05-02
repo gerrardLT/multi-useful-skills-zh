@@ -1,0 +1,4 @@
+interface:
+  display_name: Impeccable
+  short_description: 当用户想设计、重设计、shape、critique、audit、polish、clarify 等前端工作时使用
+  default_prompt: 使用 Impeccable 来重设计、评审、审计或打磨这个前端。

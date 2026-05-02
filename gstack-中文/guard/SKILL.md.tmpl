@@ -1,0 +1,86 @@
+---
+name: guard
+version: 0.1.0
+description: |-
+  完全安全模式：破坏性命令警告+目录范围内的编辑。
+  将 /careful（在 rm -rf、DROP TABLE、force-push 等之前发出警告）与
+  /freeze（阻止在指定目录之外进行编辑）。用于最大程度的安全
+  当接触产品或调试实时系统时。当被要求“保护模式”时使用，
+  “完全安全”、“锁定”或“最大安全”。 （gstack）
+triggers:
+- full safety mode
+- guard against mistakes
+- maximum safety
+allowed-tools:
+- Bash
+- Read
+- AskUserQuestion
+hooks:
+  PreToolUse:
+  - matcher: "Bash"
+    hooks:
+    - type: command
+      command: "bash ${CLAUDE_SKILL_DIR}/../careful/bin/check-careful.sh"
+      statusMessage: "Checking for destructive commands..."
+  - matcher: "Edit"
+    hooks:
+    - type: command
+      command: "bash ${CLAUDE_SKILL_DIR}/../freeze/bin/check-freeze.sh"
+      statusMessage: "Checking freeze boundary..."
+  - matcher: "Write"
+    hooks:
+    - type: command
+      command: "bash ${CLAUDE_SKILL_DIR}/../freeze/bin/check-freeze.sh"
+      statusMessage: "Checking freeze boundary..."
+---
+<!-- 从 SKILL.md.tmpl 自动生成 — 不要直接编辑 -->
+<!-- 重新生成：bun run gen:skill-docs -->
+
+# /guard — 完全安全模式
+
+激活破坏性命令警告和目录范围的编辑限制。
+这是单个命令中 `/careful` + `/freeze` 的组合。
+
+**依赖说明：** 该技能引用同级 `/careful` 中的钩子脚本
+和 `/freeze` 技能目录。两者都必须安装（它们一起安装
+通过 gstack 设置脚本）。
+
+```bash
+mkdir -p ~/.gstack/analytics
+echo '{"skill":"guard","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'","repo":"'$(basename "$(git rev-parse --show-toplevel 2>/dev/null)" 2>/dev/null || echo "unknown")'"}'  >> ~/.gstack/analytics/skill-usage.jsonl 2>/dev/null || true
+```
+
+## 设置
+
+询问用户将编辑限制到哪个目录。使用询问用户问题：
+
+- 问题：“防护模式：编辑应限制在哪个目录？破坏性命令警告始终打开。所选路径之外的文件将被阻止编辑。”
+- 文本输入（非多项选择）——用户键入路径。
+
+一旦用户提供目录路径：
+
+1. 将其解析为绝对路径：
+```bash
+FREEZE_DIR=$(cd "<user-provided-path>" 2>/dev/null && pwd)
+echo "$FREEZE_DIR"
+```
+
+2. 确保尾部斜杠并保存到冻结状态文件：
+```bash
+FREEZE_DIR="${FREEZE_DIR%/}/"
+STATE_DIR="${CLAUDE_PLUGIN_DATA:-$HOME/.gstack}"
+mkdir -p "$STATE_DIR"
+echo "$FREEZE_DIR" > "$STATE_DIR/freeze-dir.txt"
+echo "Freeze boundary set: $FREEZE_DIR"
+```
+
+告诉用户：
+- “**防护模式处于活动状态。** 两项保护正在运行：”
+- “1. **破坏性命令警告** - rm -rf、DROP TABLE、force-push 等将在执行前发出警告（您可以覆盖）”
+- “2. **编辑边界** — 文件编辑仅限于 `<path>/`。此目录之外的编辑将被阻止。”
+- “要删除编辑边界，请运行 `/unfreeze`。要停用所有内容，请结束会话。”
+
+## 受保护的内容
+
+有关破坏性命令模式和安全异常的完整列表，请参阅 `/careful`。
+请参阅 `/freeze` 了解编辑边界强制执行的工作原理。

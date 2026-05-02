@@ -1,0 +1,612 @@
+generated_from: skills/*/SKILL.md
+count: 47
+skills:
+- name: acquisition-channel-advisor
+  description: "\u4F7F\u7528\u5355\u5143\u7ECF\u6D4E\u3001\u5BA2\u6237\u8D28\u91CF\
+    \u4E0E\u53EF\u6269\u5C55\u6027\u8BC4\u4F30\u83B7\u5BA2\u6E20\u9053\u3002\u9002\
+    \u7528\u4E8E\u51B3\u5B9A\u67D0\u4E2A\u589E\u957F\u6E20\u9053\u8BE5\u6269\u5927\
+    \u6295\u5165\u3001\u7EE7\u7EED\u6D4B\u8BD5\uFF0C\u8FD8\u662F\u505C\u6B62\u3002"
+  type: interactive
+  path: skills\acquisition-channel-advisor\SKILL.md
+  intent: "\u6307\u5BFC\u4EA7\u54C1\u7ECF\u7406\u57FA\u4E8E\u5355\u5143\u7ECF\u6D4E\
+    \u6A21\u578B\uFF08CAC\u3001LTV\u3001\u56DE\u672C\u5468\u671F\uFF09\u3001\u5BA2\
+    \u6237\u8D28\u91CF\uFF08\u7559\u5B58\u3001NRR\uFF09\u548C\u53EF\u6269\u5C55\u6027\
+    \uFF08magic number\u3001\u6E20\u9053\u5BB9\u91CF\uFF09\u6765\u5224\u65AD\u67D0\
+    \u4E2A\u83B7\u5BA2\u6E20\u9053\u5E94\u6269\u5927\u3001\u4F18\u5316\u8FD8\u662F\
+    \u505C\u6B62\u3002\u7528\u4E8E\u505A\u51FA\u66F4\u6570\u636E\u9A71\u52A8\u7684\
+    \ go-to-market \u51B3\u7B56\uFF0C\u5E76\u4F18\u5316\u53EF\u6301\u7EED\u589E\u957F\
+    \u6240\u9700\u7684\u6E20\u9053\u7EC4\u5408\u3002"
+- name: ai-shaped-readiness-advisor
+  description: "\u8BC4\u4F30\u4F60\u7684\u4EA7\u54C1\u5DE5\u4F5C\u5230\u5E95\u53EA\
+    \u662F AI-first\uFF0C\u8FD8\u662F\u5DF2\u7ECF\u8FDB\u5165 AI-shaped\u3002\u9002\
+    \u7528\u4E8E\u8BC4\u4F30 AI \u6210\u719F\u5EA6\uFF0C\u5E76\u51B3\u5B9A\u56E2\u961F\
+    \u4E0B\u4E00\u6B65\u8BE5\u5EFA\u8BBE\u4EC0\u4E48\u80FD\u529B\u3002"
+  type: interactive
+  path: skills\ai-shaped-readiness-advisor\SKILL.md
+  intent: Assess whether your product work is **"AI-first"** (using AI to automate
+    existing tasks faster) or **"AI-shaped"** (fundamentally redesigning how product
+    teams operate around AI capabilities). Use this to evaluate your readiness across
+    **5 essential PM competencies for 2026**, identify gaps, and get concrete recommendations
+    on which capability to build first.
+- name: altitude-horizon-framework
+  description: "\u7528 altitude \u4E0E horizon \u7406\u89E3 PM \u5230 Director \u7684\
+    \u8F6C\u578B\u3002\u9002\u7528\u4E8E\u8BCA\u65AD\u804C\u8D23\u8303\u56F4\u3001\
+    \u65F6\u95F4\u8DE8\u5EA6\u6216\u9886\u5BFC\u5C42\u7EA7\u4E0A\u7684\u8BA4\u77E5\
+    \u7F3A\u53E3\u3002"
+  type: component
+  path: skills\altitude-horizon-framework\SKILL.md
+  intent: "\u5B9A\u4E49\u4E00\u5957\u533A\u5206 Director \u7EA7\u601D\u8003\u4E0E\
+    \ PM \u601D\u8003\u7684\u53CC\u8F74\u5FC3\u667A\u6A21\u578B\uFF1A**Altitude**\uFF08\
+    \u4F60\u628A\u89C6\u89D2\u62C9\u591A\u9AD8\uFF09\u4E0E **Horizon**\uFF08\u4F60\
+    \u628A\u65F6\u95F4\u770B\u591A\u8FDC\uFF09\u3002\u7528\u5B83\u7406\u89E3\u8F6C\
+    \u578B\u91CC\u771F\u6B63\u53D1\u751F\u4E86\u4EC0\u4E48\uFF0C\u5224\u65AD\u5230\
+    \u5E95\u662F\u54EA\u4E00\u4E2A transition zone \u5728\u5236\u9020\u6469\u64E6\uFF0C\
+    \u5E76\u5728\u7EC4\u7EC7\u65B9\u5411\u6A21\u7CCA\u65F6\u4F7F\u7528 Cascading Context\
+    \ Map\u3002"
+- name: business-health-diagnostic
+  description: "\u4ECE\u589E\u957F\u3001\u7559\u5B58\u3001\u6548\u7387\u548C\u8D44\
+    \u672C\u4F7F\u7528\u56DB\u4E2A\u7EF4\u5EA6\u8BCA\u65AD SaaS \u4E1A\u52A1\u5065\
+    \u5EB7\u5EA6\u3002\u9002\u7528\u4E8E\u51C6\u5907\u4E1A\u52A1\u590D\u76D8\u6216\
+    \u786E\u5B9A\u7D27\u6025\u4FEE\u590D\u4F18\u5148\u7EA7\u65F6\u3002"
+  type: interactive
+  path: skills\business-health-diagnostic\SKILL.md
+  intent: "\u901A\u8FC7\u628A\u589E\u957F\u3001\u7559\u5B58\u3001\u5355\u5143\u7ECF\
+    \u6D4E\u6A21\u578B\u548C\u8D44\u672C\u6548\u7387\u653E\u5728\u4E00\u8D77\u5206\
+    \u6790\uFF0C\u8BCA\u65AD SaaS \u4E1A\u52A1\u7684\u6574\u4F53\u5065\u5EB7\u5EA6\
+    \u3002\u7528\u5B83\u5C3D\u65E9\u8BC6\u522B\u95EE\u9898\uFF0C\u6309\u7D27\u6025\
+    \u7A0B\u5EA6\u6392\u5E8F\u884C\u52A8\u9879\uFF0C\u5E76\u4E3A\u8463\u4E8B\u4F1A\
+    \u4F1A\u8BAE\u3001\u5B63\u5EA6\u590D\u76D8\u6216\u878D\u8D44\u51C6\u5907\u8F93\
+    \u51FA\u4E00\u4EFD\u5B8C\u6574\u7684\u5065\u5EB7\u8BC4\u5206\u5361\u3002"
+- name: company-research
+  description: "\u751F\u6210\u4E00\u4EFD\u516C\u53F8\u7814\u7A76\u7B80\u62A5\uFF0C\
+    \u5305\u542B\u9AD8\u7BA1\u89C2\u70B9\u3001\u4EA7\u54C1\u6218\u7565\u548C\u7EC4\
+    \u7EC7\u80CC\u666F\u3002\u9002\u7528\u4E8E\u51C6\u5907\u9762\u8BD5\u3001\u7ADE\
+    \u54C1\u5206\u6790\u3001\u5408\u4F5C\u8BC4\u4F30\u6216\u5E02\u573A\u8FDB\u5165\
+    \u7814\u7A76\u3002"
+  type: component
+  path: skills\company-research\SKILL.md
+  intent: Create a comprehensive company profile that extracts executive insights,
+    product strategy, transformation initiatives, and organizational dynamics from
+    publicly available sources. Use this to understand competitive landscape, evaluate
+    partnership opportunities, benchmark best practices, prepare for interviews, or
+    inform market entry decisions by understanding how successful companies think
+    about product management and strategy.
+- name: context-engineering-advisor
+  description: "\u8BCA\u65AD\u4F60\u662F\u5728\u505A context stuffing \u8FD8\u662F\
+    \ context engineering\u3002\u9002\u7528\u4E8E AI \u5DE5\u4F5C\u6D41\u663E\u5F97\
+    \u81C3\u80BF\u3001\u8106\u5F31\u6216\u96BE\u4EE5\u7A33\u5B9A\u63A7\u5236\u65F6\
+    \u3002"
+  type: interactive
+  path: skills\context-engineering-advisor\SKILL.md
+  intent: "\u5E2E\u52A9\u4EA7\u54C1\u7ECF\u7406\u5224\u65AD\u81EA\u5DF1\u505A\u7684\
+    \u662F **context stuffing**\uFF08\u65E0\u76EE\u7684\u5730\u5806\u4E0A\u4E0B\u6587\
+    \uFF09\u8FD8\u662F **context engineering**\uFF08\u4E3A\u6CE8\u610F\u529B\u8BBE\
+    \u8BA1\u7ED3\u6784\uFF09\u3002\u7528\u5B83\u8BC6\u522B context boundary\uFF0C\u4FEE\
+    \u6B63 \u201CContext Hoarding Disorder\u201D\uFF0C\u5E76\u843D\u5730 bounded domains\u3001\
+    episodic retrieval\u3001Research -> Plan -> Reset -> Implement \u7B49\u5B9E\u8DF5\
+    \u3002"
+- name: customer-journey-map
+  description: "\u56F4\u7ED5\u9636\u6BB5\u3001\u89E6\u70B9\u3001\u52A8\u4F5C\u3001\
+    \u60C5\u7EEA\u548C\u6307\u6807\u521B\u5EFA\u5BA2\u6237\u65C5\u7A0B\u56FE\u3002\
+    \u9002\u7528\u4E8E\u8BCA\u65AD\u65AD\u88C2\u4F53\u9A8C\uFF0C\u6216\u8BA9\u56E2\
+    \u961F\u5BF9\u5B8C\u6574\u5BA2\u6237\u6D41\u7A0B\u5F62\u6210\u4E00\u81F4\u8BA4\
+    \u77E5\u3002"
+  type: component
+  path: skills\customer-journey-map\SKILL.md
+  intent: "Create a comprehensive customer journey map that visualizes how customers\
+    \ interact with your brand across all stages\u9225\u6506rom awareness to loyalty\u9225\
+    \u6504ocumenting their actions, touchpoints, emotions, KPIs, business goals, and\
+    \ teams involved at each stage. Use this to identify pain points, align cross-functional\
+    \ teams, and systematically improve the customer experience to achieve business\
+    \ objectives."
+- name: customer-journey-mapping-workshop
+  description: "\u901A\u8FC7\u81EA\u9002\u5E94\u63D0\u95EE\u548C\u7ED3\u6784\u5316\
+    \u8F93\u51FA\u8FD0\u884C\u5BA2\u6237\u65C5\u7A0B\u6620\u5C04\u5DE5\u4F5C\u574A\
+    \u3002\u9002\u7528\u4E8E\u56F4\u7ED5\u67D0\u4E2A persona \u4E0E\u573A\u666F\u68B3\
+    \u7406\u9636\u6BB5\u3001\u52A8\u4F5C\u3001\u60C5\u7EEA\u3001\u75DB\u70B9\u548C\
+    \u673A\u4F1A\u3002"
+  type: interactive
+  path: skills\customer-journey-mapping-workshop\SKILL.md
+  intent: "Guide product managers through creating a customer journey map by asking\
+    \ adaptive questions about the actor (persona), scenario/goal, journey phases,\
+    \ actions/emotions, and opportunities for improvement. Use this to visualize the\
+    \ end-to-end customer experience, identify pain points, and create a shared mental\
+    \ model across teams\u9225\u6501voiding surface-level feature lists and ensuring\
+    \ discovery work focuses on real customer problems, not assumed solutions."
+- name: director-readiness-advisor
+  description: "\u56F4\u7ED5\u51C6\u5907\u3001\u9762\u8BD5\u3001\u4E0A\u4EFB\u4E0E\
+    \u91CD\u65B0\u6821\u51C6\u56DB\u4E2A\u9636\u6BB5\uFF0C\u6307\u5BFC PM \u5411 Director\
+    \ \u8F6C\u578B\u3002\u9002\u7528\u4E8E\u7BA1\u7406\u8303\u56F4\u53D8\u5316\u65F6\
+    \u9700\u8981\u66F4\u52A1\u5B9E\u7684\u8F85\u5BFC\u3002"
+  type: interactive
+  path: skills\director-readiness-advisor\SKILL.md
+  intent: "\u7528\u81EA\u9002\u5E94\u63D0\u95EE\u548C\u6709\u9488\u5BF9\u6027\u7684\
+    \u8F85\u5BFC\uFF0C\u5E2E\u52A9 PM \u548C Director \u5E94\u5BF9 PM \u5230 Director\
+    \ \u8F6C\u578B\u4E2D\u7684\u5177\u4F53\u6311\u6218\u3002\u5B83\u4F1A\u5224\u65AD\
+    \u4F60\u5728\u8FD9\u6BB5\u65C5\u7A0B\u4E2D\u7684\u4F4D\u7F6E\uFF0C\u5E76\u7ED9\
+    \u51FA\u8D34\u5408\u4F60\u5F53\u524D\u60C5\u5883\u3001\u5E26\u6709\u771F\u5B9E\
+    \u7ECF\u9A8C\u611F\u7684\u5EFA\u8BAE\uFF0C\u800C\u4E0D\u662F\u6CDB\u6CDB\u7684\
+    \u9886\u5BFC\u529B\u5EFA\u8BAE\u3002"
+- name: discovery-interview-prep
+  description: "\u7528\u6B63\u786E\u7684\u76EE\u6807\u3001\u7EC6\u5206\u3001\u7EA6\
+    \u675F\u4E0E\u65B9\u6CD5\u6765\u89C4\u5212\u5BA2\u6237\u53D1\u73B0\u8BBF\u8C08\
+    \u3002\u9002\u7528\u4E8E\u4E3A\u95EE\u9898\u9A8C\u8BC1\u3001\u6D41\u5931\u7814\
+    \u7A76\u6216\u65B0\u4EA7\u54C1\u60F3\u6CD5\u505A\u8BBF\u8C08\u51C6\u5907\u65F6\
+    \u3002"
+  type: interactive
+  path: skills\discovery-interview-prep\SKILL.md
+  intent: "\u901A\u8FC7\u56F4\u7ED5\u7814\u7A76\u76EE\u6807\u3001\u5BA2\u6237\u7EC6\
+    \u5206\u3001\u73B0\u5B9E\u7EA6\u675F\u548C\u8BBF\u8C08\u65B9\u6CD5\u505A\u81EA\
+    \u9002\u5E94\u63D0\u95EE\uFF0C\u5E2E\u52A9\u4EA7\u54C1\u7ECF\u7406\u51C6\u5907\
+    \u5BA2\u6237\u53D1\u73B0\u8BBF\u8C08\u3002\u7528\u5B83\u8BBE\u8BA1\u66F4\u6709\
+    \u6548\u7684\u8BBF\u8C08\u8BA1\u5212\u3001\u63D0\u70BC\u66F4\u7CBE\u51C6\u7684\
+    \u95EE\u9898\u3001\u907F\u514D\u5E38\u89C1\u504F\u5DEE\uFF0C\u5E76\u5728\u5BA2\
+    \u6237\u8BBF\u95EE\u673A\u4F1A\u6709\u9650\u65F6\u5C3D\u91CF\u63D0\u9AD8\u5B66\
+    \u4E60\u4EA7\u51FA\uFF0C\u786E\u4FDD discovery interviews \u5F97\u5230\u7684\u662F\
+    \u53EF\u6267\u884C\u6D1E\u5BDF\uFF0C\u800C\u4E0D\u662F\u786E\u8BA4\u504F\u5DEE\
+    \u6216\u8868\u5C42\u53CD\u9988\u3002"
+- name: discovery-process
+  description: "\u8DD1\u5B8C\u6574\u4E2A discovery \u6D41\u7A0B\uFF0C\u4ECE\u95EE\u9898\
+    \u5047\u8BBE\u8D70\u5230\u65B9\u6848\u9A8C\u8BC1\u3002\u9002\u7528\u4E8E\u56E2\
+    \u961F\u9700\u8981\u4E00\u6761\u7ED3\u6784\u5316\u8DEF\u5F84\u6765\u5B8C\u6210\
+    \ framing\u3001\u8BBF\u8C08\u3001\u7EFC\u5408\u548C\u5B9E\u9A8C\u3002"
+  type: workflow
+  path: skills\discovery-process\SKILL.md
+  intent: "Guide product managers through a complete discovery cycle\u9225\u6506rom\
+    \ initial problem hypothesis to validated solution\u9225\u6502y orchestrating\
+    \ problem framing, customer interviews, synthesis, and experimentation skills\
+    \ into a structured process. Use this to systematically explore problem spaces,\
+    \ validate assumptions, and build confidence before committing to full development\u9225\
+    \u6501voiding \"build it and they will come\" syndrome and ensuring you're solving\
+    \ real customer problems."
+- name: eol-message
+  description: "\u64B0\u5199\u6E05\u6670\u4E14\u6709\u540C\u7406\u5FC3\u7684 EOL \u516C\
+    \u544A\uFF0C\u8BF4\u660E\u539F\u56E0\u3001\u5BA2\u6237\u5F71\u54CD\u4E0E\u540E\
+    \u7EED\u5B89\u6392\u3002\u9002\u7528\u4E8E\u4E0B\u7EBF\u4EA7\u54C1\u3001\u529F\
+    \u80FD\u6216\u8BA1\u5212\u65F6\uFF0C\u907F\u514D\u5236\u9020\u4E0D\u5FC5\u8981\
+    \u7684\u56F0\u60D1\u3002"
+  type: component
+  path: skills\eol-message\SKILL.md
+  intent: "\u64B0\u5199\u4E00\u4EFD\u6E05\u6670\u4E14\u6709\u540C\u7406\u5FC3\u7684\
+    \ End-of-Life\uFF08EOL\uFF09\u6D88\u606F\uFF0C\u7528\u4E8E\u8BF4\u660E\u4EA7\u54C1\
+    \u6216\u529F\u80FD\u7EC8\u6B62\u3001\u89E3\u91CA\u539F\u56E0\u3001\u56DE\u5E94\
+    \u5BA2\u6237\u5F71\u54CD\u3001\u63D0\u4F9B\u8FC7\u6E21\u652F\u6301\uFF0C\u5E76\
+    \u4ECB\u7ECD\u66FF\u4EE3\u65B9\u6848\u3002\u7528\u5B83\u5728\u8270\u96BE\u8F6C\
+    \u578B\u4E2D\u7EF4\u6301\u5BA2\u6237\u4FE1\u4EFB\uFF0C\u5E76\u901A\u8FC7\u6E05\
+    \u6670\u7684\u8FC1\u79FB\u8DEF\u5F84\u964D\u4F4E\u6D41\u5931\u3002"
+- name: epic-breakdown-advisor
+  description: "\u7528 Humanizing Work \u7684\u62C6\u5206\u6A21\u5F0F\u628A epic \u62C6\
+    \u6210 user stories\u3002\u9002\u7528\u4E8E backlog \u9879\u8FC7\u5927\uFF0C\u65E0\
+    \u6CD5\u5B89\u5168\u4F30\u7B97\u3001\u6392\u5E8F\u6216\u4EA4\u4ED8\u65F6\u3002"
+  type: interactive
+  path: skills\epic-breakdown-advisor\SKILL.md
+  intent: "Guide product managers through breaking down epics into user stories using\
+    \ Richard Lawrence's complete Humanizing Work methodology\u9225\u6501 systematic,\
+    \ flowchart-driven approach that applies 9 splitting patterns sequentially. Use\
+    \ this to identify which pattern applies, split while preserving user value, and\
+    \ evaluate splits based on what they reveal about low-value work you can eliminate.\
+    \ This ensures vertical slicing (end-to-end value) rather than horizontal slicing\
+    \ (technical layers)."
+- name: epic-hypothesis
+  description: "\u628A epic \u8868\u8FBE\u6210\u53EF\u9A8C\u8BC1\u7684\u5047\u8BBE\
+    \uFF0C\u660E\u786E\u76EE\u6807\u7528\u6237\u3001\u9884\u671F\u7ED3\u679C\u548C\
+    \u9A8C\u8BC1\u65B9\u5F0F\u3002\u9002\u7528\u4E8E\u5728 roadmap\u3001discovery\
+    \ \u6216\u4EA4\u4ED8\u89C4\u5212\u524D\u5B9A\u4E49\u91CD\u5927\u8BA1\u5212\u3002"
+  type: component
+  path: skills\epic-hypothesis\SKILL.md
+  intent: "\u7528 if/then \u7ED3\u6784\u628A epic \u5199\u6210\u53EF\u9A8C\u8BC1\u7684\
+    \u5047\u8BBE\uFF0C\u660E\u786E\u884C\u52A8\u6216\u65B9\u6848\u3001\u76EE\u6807\
+    \u53D7\u76CA\u4EBA\u3001\u9884\u671F\u7ED3\u679C\uFF0C\u4EE5\u53CA\u4F60\u5982\
+    \u4F55\u9A8C\u8BC1\u6210\u529F\u3002\u7528\u5B83\u628A\u4EA7\u54C1\u5F00\u53D1\
+    \u4E2D\u7684\u4E0D\u786E\u5B9A\u6027\u663E\u5F0F\u5316\uFF0C\u8BBE\u8BA1\u8F7B\
+    \u91CF\u5B9E\u9A8C\uFF08\"tiny acts of discovery\"\uFF09\uFF0C\u5E76\u5728\u6B63\
+    \u5F0F\u6295\u5165\u5F00\u53D1\u524D\u5148\u5EFA\u7ACB\u53EF\u8861\u91CF\u7684\
+    \u6210\u529F\u6807\u51C6\u3002"
+- name: executive-onboarding-playbook
+  description: "\u89C4\u5212 VP \u6216 CPO \u7684 30-60-90 \u5929\u8BCA\u65AD\u5F0F\
+    \u5165\u804C\u8DEF\u5F84\u3002\u9002\u7528\u4E8E\u8FDB\u5165\u65B0\u7684\u9AD8\
+    \u9636\u4EA7\u54C1\u5C97\u4F4D\uFF0C\u5E76\u907F\u514D\u8FC7\u65E9\u63A8\u52A8\
+    \u53D8\u9769\u3002"
+  type: workflow
+  path: skills\executive-onboarding-playbook\SKILL.md
+  intent: "Structure the first 90 days of a VP or CPO transition as a diagnostic process,\
+    \ not an execution sprint. The single most common failure in senior product leadership\
+    \ transitions is acting before understanding \u9225?changing structures, replacing\
+    \ people, or announcing strategy before building the evidence base that makes\
+    \ those decisions defensible."
+- name: feature-investment-advisor
+  description: "\u4ECE\u6536\u5165\u5F71\u54CD\u3001\u6210\u672C\u7ED3\u6784\u3001\
+    ROI \u548C\u6218\u7565\u4EF7\u503C\u89D2\u5EA6\u8BC4\u4F30\u529F\u80FD\u6295\u5165\
+    \u3002\u9002\u7528\u4E8E\u5224\u65AD\u4E00\u4E2A\u529F\u80FD\u662F\u5426\u503C\
+    \u5F97\u7EE7\u7EED\u6295\u8D44\u3002"
+  type: interactive
+  path: skills\feature-investment-advisor\SKILL.md
+  intent: "Guide product managers through evaluating whether to build a feature based\
+    \ on financial impact analysis. Use this to make data-driven prioritization decisions\
+    \ by assessing revenue connection (direct or indirect), cost structure (dev +\
+    \ COGS + OpEx), ROI calculation, and strategic value\u9225\u6516hen deliver actionable\
+    \ build/don't build recommendations with supporting math."
+- name: finance-based-pricing-advisor
+  description: "\u7528 ARPU\u3001\u8F6C\u5316\u7387\u3001\u6D41\u5931\u98CE\u9669\u3001\
+    NRR \u548C\u56DE\u672C\u5468\u671F\u8BC4\u4F30\u5B9A\u4EF7\u8C03\u6574\u3002\u9002\
+    \u7528\u4E8E\u5224\u65AD\u67D0\u4E2A\u5B9A\u4EF7\u52A8\u4F5C\u662F\u5426\u5E94\
+    \u8BE5\u4E0A\u7EBF\u3002"
+  type: interactive
+  path: skills\finance-based-pricing-advisor\SKILL.md
+  intent: Evaluate the **financial impact** of pricing changes (price increases, new
+    tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn
+    risk, NRR effects, and CAC payback implications. Use this to make data-driven
+    go/no-go decisions on proposed pricing changes with supporting math and risk assessment.
+- name: finance-metrics-quickref
+  description: "\u5FEB\u901F\u67E5\u8BE2 SaaS \u8D22\u52A1\u6307\u6807\u3001\u516C\
+    \u5F0F\u548C benchmark\u3002\u9002\u7528\u4E8E\u5206\u6790\u8FC7\u7A0B\u4E2D\u9700\
+    \u8981\u7ACB\u523B\u786E\u8BA4\u67D0\u4E2A\u6307\u6807\u5B9A\u4E49\u3001\u516C\
+    \u5F0F\u6216 benchmark \u65F6\u3002"
+  type: component
+  path: skills\finance-metrics-quickref\SKILL.md
+  intent: Quick reference for any SaaS finance metric without deep teaching. Use this
+    when you need a fast formula lookup, benchmark check, or decision framework reminder.
+    For detailed explanations, calculations, and examples, see the related deep-dive
+    skills.
+- name: jobs-to-be-done
+  description: "\u7528\u7ED3\u6784\u5316 JTBD \u683C\u5F0F\u68B3\u7406 customer jobs\u3001\
+    pains \u548C gains\u3002\u9002\u7528\u4E8E\u6F84\u6E05\u672A\u6EE1\u8DB3\u9700\
+    \u6C42\u3001\u91CD\u65B0\u5B9A\u4F4D\u4EA7\u54C1\uFF0C\u6216\u63D0\u5347 discovery\
+    \ \u4E0E messaging\u3002"
+  type: component
+  path: skills\jobs-to-be-done\SKILL.md
+  intent: "Systematically explore what customers are trying to accomplish (functional,\
+    \ social, emotional jobs), the pains they experience, and the gains they seek.\
+    \ Use this framework to uncover unmet needs, validate product ideas, and ensure\
+    \ your solution addresses real motivations\u9225\u650Fot just surface-level feature\
+    \ requests."
+- name: lean-ux-canvas
+  description: "\u5F15\u5BFC\u56E2\u961F\u5B8C\u6210 Lean UX Canvas v2\u3002\u9002\
+    \u7528\u4E8E\u6846\u5B9A business problem\u3001\u66B4\u9732 assumptions\uFF0C\u5E76\
+    \u5B9A\u4E49\u4E0B\u4E00\u6B65\u8BE5\u5B66\u4EC0\u4E48\u3002"
+  type: interactive
+  path: skills\lean-ux-canvas\SKILL.md
+  intent: "Guide product managers through creating **Jeff Gothelf's Lean UX Canvas\
+    \ (v2)**\u9225\u6501 one-page facilitation tool that frames work around a **business\
+    \ problem to solve**, not a **solution to implement**. Use this to align cross-functional\
+    \ teams around core assumptions, craft testable hypotheses, and ensure learning\
+    \ happens every sprint by exposing gaps in understanding (problem, users, value,\
+    \ and why the solution should work)."
+- name: opportunity-solution-tree
+  description: "\u4ECE outcomes \u5EF6\u5C55\u5230 opportunities\u3001solutions \u548C\
+    \ tests\uFF0C\u6784\u5EFA Opportunity Solution Tree\u3002\u9002\u7528\u4E8E stakeholder\
+    \ request \u8FD8\u9700\u8981\u5148\u505A problem framing \u65F6\u3002"
+  type: interactive
+  path: skills\opportunity-solution-tree\SKILL.md
+  intent: "Guide product managers through creating an Opportunity Solution Tree (OST)\
+    \ by extracting target outcomes from stakeholder requests, generating opportunity\
+    \ options (problems to solve), mapping potential solutions, and selecting the\
+    \ best proof-of-concept (POC) based on feasibility, impact, and market fit. Use\
+    \ this to move from vague product requests to structured discovery, ensuring teams\
+    \ solve the right problems before jumping to solutions\u9225\u6501voiding \"feature\
+    \ factory\" syndrome and premature convergence on ideas."
+- name: pestel-analysis
+  description: "\u5206\u6790\u653F\u6CBB\u3001\u7ECF\u6D4E\u3001\u793E\u4F1A\u3001\
+    \u6280\u672F\u3001\u73AF\u5883\u548C\u6CD5\u5F8B\u529B\u91CF\u3002\u9002\u7528\
+    \u4E8E\u5916\u90E8\u5E02\u573A\u53D8\u5316\u53EF\u80FD\u663E\u8457\u5F71\u54CD\
+    \u4EA7\u54C1\u3001\u8DEF\u7EBF\u56FE\u6216\u6218\u7565\u65F6\u3002"
+  type: component
+  path: skills\pestel-analysis\SKILL.md
+  intent: "\u7CFB\u7EDF\u5206\u6790\u53EF\u80FD\u5F71\u54CD\u4EA7\u54C1\u6216\u9879\
+    \u76EE\u7684\u5B8F\u89C2\u73AF\u5883\u56E0\u7D20\uFF1APolitical\u3001Economic\u3001\
+    Social\u3001Technological\u3001Environmental\u3001Legal\u3002\u7528\u5B83\u8BC6\
+    \u522B\u5916\u90E8\u673A\u4F1A\u4E0E\u5A01\u80C1\uFF0C\u652F\u6491\u6218\u7565\
+    \u89C4\u5212\uFF0C\u8BC4\u4F30\u5E02\u573A\u8FDB\u5165\u98CE\u9669\uFF0C\u5E76\
+    \u5728\u8D85\u51FA\u4F60\u63A7\u5236\u8303\u56F4\u7684\u5916\u90E8\u73AF\u5883\
+    \u4E2D\u505A\u51FA\u66F4\u7A33\u5065\u7684\u4EA7\u54C1\u51B3\u7B56\u3002"
+- name: pol-probe
+  description: "\u5B9A\u4E49\u4E00\u4E2A Proof of Life probe\uFF0C\u7528\u6700\u4F4E\
+    \u6210\u672C\u6D4B\u8BD5\u9AD8\u98CE\u9669\u5047\u8BBE\u3002\u9002\u7528\u4E8E\
+    \u4F60\u9700\u8981\u5728\u771F\u6B63\u6295\u5165\u5F00\u53D1\u524D\u5148\u62FF\
+    \u5230\u6B8B\u9177\u771F\u76F8\u7684\u65F6\u5019\u3002"
+  type: component
+  path: skills\pol-probe\SKILL.md
+  intent: "Define and document a **Proof of Life (PoL) probe**\u9225\u6501 lightweight,\
+    \ disposable validation artifact designed to surface harsh truths before expensive\
+    \ development. Use this when you need to eliminate a specific risk or test a narrow\
+    \ hypothesis **without building production-quality software**. PoL probes are\
+    \ reconnaissance missions, not MVPs\u9225\u6516hey're meant to be deleted, not\
+    \ scaled."
+- name: pol-probe-advisor
+  description: Select the right Proof of Life (PoL) probe based on hypothesis, risk,
+    and resources. Use this to match the validation method to the real learning goal,
+    not tooling comfort.
+  type: interactive
+  path: skills\pol-probe-advisor\SKILL.md
+  intent: "Guide product managers through selecting the right **Proof of Life (PoL)\
+    \ probe** type (of 5 flavors) based on their hypothesis, risk, and available resources.\
+    \ Use this when you need to eliminate a specific risk or test a narrow hypothesis,\
+    \ but aren't sure which validation method to use. This interactive skill ensures\
+    \ you match the cheapest prototype to the harshest truth\u9225\u650Fot the prototype\
+    \ you're most comfortable building."
+- name: positioning-statement
+  description: "\u521B\u5EFA Geoffrey Moore \u98CE\u683C\u7684\u5B9A\u4F4D\u9648\u8FF0\
+    \u3002\u9002\u7528\u4E8E\u6F84\u6E05\u670D\u52A1\u5BF9\u8C61\u3001\u8981\u89E3\
+    \u51B3\u7684\u95EE\u9898\u3001\u6240\u5C5E\u54C1\u7C7B\uFF0C\u4EE5\u53CA\u4F60\
+    \u4E3A\u4F55\u533A\u522B\u4E8E\u66FF\u4EE3\u65B9\u6848\u3002"
+  type: component
+  path: skills\positioning-statement\SKILL.md
+  intent: Create a Geoffrey Moore-style positioning statement that clearly articulates
+    who your product serves, what need it addresses, how it's categorized, what benefit
+    it delivers, and how it differs from alternatives. Use this when you need to align
+    stakeholders on product strategy, guide messaging, or test if your value proposition
+    is crisp and defensible.
+- name: positioning-workshop
+  description: "\u8FD0\u884C\u5B9A\u4F4D\u5DE5\u4F5C\u574A\uFF0C\u68B3\u7406\u76EE\
+    \u6807\u5BA2\u6237\u3001\u672A\u6EE1\u8DB3\u9700\u6C42\u3001\u54C1\u7C7B\u3001\
+    \u6536\u76CA\u4E0E\u5DEE\u5F02\u5316\u3002\u9002\u7528\u4E8E\u4EA7\u54C1\u4FE1\
+    \u606F\u6A21\u7CCA\u3001\u6CDB\u5316\u6216\u5931\u7126\u65F6\u3002"
+  type: interactive
+  path: skills\positioning-workshop\SKILL.md
+  intent: "Guide product managers through discovering and articulating product positioning\
+    \ by asking adaptive questions about target customers, unmet needs, product category,\
+    \ benefits, and competitive differentiation. Use this to align stakeholders on\
+    \ strategic positioning before writing PRDs, launch plans, or marketing materials\u9225\
+    \u6505nsuring you've made deliberate choices about who you serve, what need you\
+    \ address, and how you differ from alternatives."
+- name: prd-development
+  description: "\u6784\u5EFA\u7ED3\u6784\u5316 PRD\uFF0C\u628A\u95EE\u9898\u3001\u7528\
+    \u6237\u3001\u65B9\u6848\u548C\u6210\u529F\u6807\u51C6\u8FDE\u63A5\u8D77\u6765\
+    \u3002\u9002\u7528\u4E8E\u628A discovery \u7B14\u8BB0\u8F6C\u6210\u9762\u5411\u5DE5\
+    \u7A0B\u7684\u5927\u578B\u9879\u76EE\u6587\u6863\u3002"
+  type: workflow
+  path: skills\prd-development\SKILL.md
+  intent: "Guide product managers through structured PRD (Product Requirements Document)\
+    \ creation by orchestrating problem framing, user research synthesis, solution\
+    \ definition, and success criteria into a cohesive document. Use this to move\
+    \ from scattered notes and Slack threads to a clear, comprehensive PRD that aligns\
+    \ stakeholders, provides engineering context, and serves as a source of truth\u9225\
+    \u6501voiding ambiguity, scope creep, and the \"build what's in my head\" trap."
+- name: press-release
+  description: "\u64B0\u5199 Amazon \u98CE\u683C\u7684\u65B0\u95FB\u7A3F\uFF0C\u5728\
+    \u5F00\u53D1\u524D\u5148\u5B9A\u4E49\u5BA2\u6237\u4EF7\u503C\u3002\u9002\u7528\
+    \u4E8E\u8BA9\u5229\u76CA\u76F8\u5173\u65B9\u5C31\u65B0\u4EA7\u54C1\u3001\u529F\
+    \u80FD\u6216\u6218\u7565\u4E0B\u6CE8\u8FBE\u6210\u4E00\u81F4\u3002"
+  type: component
+  path: skills\press-release\SKILL.md
+  intent: "Create a visionary press release following Amazon's \"Working Backwards\"\
+    \ methodology to define and communicate a product or feature before building it.\
+    \ Use this to align stakeholders on the customer value proposition, clarify the\
+    \ problem being solved, and test if the product story resonates\u9225\u6516reating\
+    \ the press release as a forcing function for clarity and customer-centricity."
+- name: prioritization-advisor
+  description: "\u6839\u636E\u9636\u6BB5\u3001\u56E2\u961F\u80CC\u666F\u548C\u5229\
+    \u76CA\u76F8\u5173\u65B9\u9700\u6C42\u9009\u62E9\u4F18\u5148\u7EA7\u6846\u67B6\
+    \u3002\u9002\u7528\u4E8E\u5728 RICE\u3001ICE\u3001value/effort \u6216\u5176\u4ED6\
+    \u8BC4\u5206\u65B9\u5F0F\u4E4B\u95F4\u505A\u53D6\u820D\u3002"
+  type: interactive
+  path: skills\prioritization-advisor\SKILL.md
+  intent: Guide product managers in choosing the right prioritization framework by
+    asking adaptive questions about product stage, team context, decision-making needs,
+    and stakeholder dynamics. Use this to avoid "framework whiplash" (switching frameworks
+    constantly) or applying the wrong framework (e.g., using RICE for strategic bets
+    or ICE for data-driven decisions). Outputs a recommended framework with implementation
+    guidance tailored to your context.
+- name: problem-framing-canvas
+  description: "\u5F15\u5BFC\u56E2\u961F\u4F7F\u7528 MITRE \u7684 Problem Framing\
+    \ Canvas\u3002\u9002\u7528\u4E8E\u5728\u8DF3\u5230\u89E3\u51B3\u65B9\u6848\u4E4B\
+    \u524D\uFF0C\u5148\u628A\u95EE\u9898\u5B9A\u4E49\u5F97\u66F4\u6E05\u695A\u3002"
+  type: interactive
+  path: skills\problem-framing-canvas\SKILL.md
+  intent: "Guide product managers through the MITRE Problem Framing Canvas process\
+    \ by asking structured questions across three phases: Look Inward (examine your\
+    \ own assumptions and biases), Look Outward (understand who experiences the problem\
+    \ and who doesn't), and Reframe (synthesize insights into an actionable problem\
+    \ statement and \"How Might We\" question). Use this to ensure you're solving\
+    \ the right problem before jumping to solutions\u9225\u6501voiding confirmation\
+    \ bias, overlooked stakeholders, and solution-first thinking."
+- name: problem-statement
+  description: "\u5199\u51FA\u4EE5\u7528\u6237\u4E3A\u4E2D\u5FC3\u7684\u95EE\u9898\
+    \u9648\u8FF0\uFF0C\u660E\u786E\u662F\u8C01\u88AB\u5361\u4F4F\u3001\u4ED6\u4EEC\
+    \u60F3\u5B8C\u6210\u4EC0\u4E48\u3001\u4E3A\u4EC0\u4E48\u91CD\u8981\uFF0C\u4EE5\
+    \u53CA\u4ED6\u4EEC\u7684\u611F\u53D7\u3002\u9002\u7528\u4E8E framing discovery\u3001\
+    prioritization \u6216 PRD \u65F6\u3002"
+  type: component
+  path: skills\problem-statement\SKILL.md
+  intent: "\u7528\u4E00\u5957\u4EE5\u5171\u60C5\u9A71\u52A8\u7684\u6846\u67B6\uFF0C\
+    \u4ECE\u7528\u6237\u89C6\u89D2\u6E05\u695A\u8868\u8FBE\u95EE\u9898\uFF1A\u4ED6\
+    \u4EEC\u662F\u8C01\u3001\u60F3\u5B8C\u6210\u4EC0\u4E48\u3001\u88AB\u4EC0\u4E48\
+    \u963B\u788D\u3001\u4E3A\u4EC0\u4E48\u4F1A\u8FD9\u6837\uFF0C\u4EE5\u53CA\u8FD9\
+    \u8BA9\u4ED6\u4EEC\u6709\u4EC0\u4E48\u611F\u53D7\u3002\u7528\u5B83\u5728\u8DF3\
+    \u8FDB\u65B9\u6848\u524D\u5148\u5BF9\u9F50\u95EE\u9898\u672C\u8EAB\uFF0C\u5E76\
+    \u628A\u4EA7\u54C1\u5DE5\u4F5C\u951A\u5B9A\u5728\u7528\u6237\u7ED3\u679C\u4E0A\
+    \uFF0C\u800C\u4E0D\u662F\u529F\u80FD\u8BF7\u6C42\u4E0A\u3002"
+- name: product-sense-interview-answer
+  description: "\u7EC4\u7EC7\u53E3\u5934 PM product-sense \u9762\u8BD5\u7B54\u6848\
+    \uFF0C\u8986\u76D6\u5047\u8BBE\u3001\u5206\u7FA4\u3001\u75DB\u70B9\u4F18\u5148\
+    \u7EA7\u548C MVP \u53D6\u820D\u3002\u9002\u7528\u4E8E\u7EC3\u4E60\u8BBE\u8BA1\u3001\
+    \u6539\u8FDB\u6216 build-next \u7C7B\u9762\u8BD5\u9898\u3002"
+  type: component
+  path: skills\product-sense-interview-answer\SKILL.md
+  intent: 'Coach PM candidates through open-ended product-sense interviews using a
+    repeatable six-part answer spine: clarify, rationale, goal, segmentation, pain
+    points, and solution choice. Use this to practice product design and product improvement
+    questions, avoid solution-first answers, and produce responses that sound thoughtful
+    out loud rather than over-scripted on the page.'
+- name: product-strategy-session
+  description: "\u8FD0\u884C\u7AEF\u5230\u7AEF\u4EA7\u54C1\u6218\u7565 session\uFF0C\
+    \u8986\u76D6\u5B9A\u4F4D\u3001discovery \u548C roadmap \u89C4\u5212\u3002\u9002\
+    \u7528\u4E8E\u56E2\u961F\u5728\u6295\u5165\u6267\u884C\u524D\u9700\u8981\u4E00\
+    \u4E2A\u7ECF\u8FC7\u9A8C\u8BC1\u7684\u65B9\u5411\u3002"
+  type: workflow
+  path: skills\product-strategy-session\SKILL.md
+  intent: "Guide product managers through a comprehensive product strategy session\
+    \ by orchestrating positioning, problem framing, customer discovery, and roadmap\
+    \ planning skills into a cohesive end-to-end process. Use this to move from vague\
+    \ strategic direction to concrete, validated product strategy with clear positioning,\
+    \ target customers, problem statements, and prioritized roadmap\u9225\u6505nsuring\
+    \ alignment across stakeholders before committing to execution."
+- name: proto-persona
+  description: "\u57FA\u4E8E\u73B0\u6709\u7814\u7A76\u3001\u5E02\u573A\u4FE1\u53F7\
+    \u548C\u56E2\u961F\u8BA4\u77E5\u521B\u5EFA proto-persona\u3002\u9002\u7528\u4E8E\
+    \u5728\u6DF1\u5165\u9A8C\u8BC1\u524D\u5148\u5EFA\u7ACB\u4E00\u4E2A\u53EF\u7528\
+    \u7684\u5BA2\u6237\u753B\u50CF\u3002"
+  type: component
+  path: skills\proto-persona\SKILL.md
+  intent: Create an initial, assumption-based persona profile that synthesizes available
+    user research, market data, and stakeholder knowledge into a working hypothesis
+    about your target user. Use this to align teams early in product development,
+    guide initial design decisions, and identify gaps in understanding that require
+    validation through research.
+- name: recommendation-canvas
+  description: "\u4ECE\u7ED3\u679C\u3001\u5047\u8BBE\u3001\u98CE\u9669\u548C\u5B9A\
+    \u4F4D\u7B49\u89D2\u5EA6\u8BC4\u4F30 AI \u4EA7\u54C1\u60F3\u6CD5\u3002\u9002\u7528\
+    \u4E8E\u5224\u65AD\u67D0\u4E2A AI \u65B9\u6848\u662F\u5426\u503C\u5F97\u6295\u8D44\
+    \u6216\u63A8\u8350\u3002"
+  type: component
+  path: skills\recommendation-canvas\SKILL.md
+  intent: "Evaluate and propose AI product solutions using a structured canvas that\
+    \ assesses business outcomes, customer outcomes, problem framing, solution hypotheses,\
+    \ positioning, risks, and value justification. Use this to build a comprehensive,\
+    \ defensible recommendation for stakeholders and decision-makers\u9225\u6505specially\
+    \ when proposing AI-powered features or products that carry higher uncertainty\
+    \ and risk."
+- name: roadmap-planning
+  description: "\u56F4\u7ED5\u4F18\u5148\u7EA7\u3001epic \u5B9A\u4E49\u3001\u5229\u76CA\
+    \u76F8\u5173\u65B9\u5BF9\u9F50\u548C\u6392\u5E8F\u6765\u89C4\u5212\u6218\u7565\
+    \ roadmap\u3002\u9002\u7528\u4E8E\u628A\u6218\u7565\u8F6C\u5316\u6210\u56E2\u961F\
+    \u53EF\u6267\u884C\u7684\u53D1\u5E03\u8BA1\u5212\u3002"
+  type: workflow
+  path: skills\roadmap-planning\SKILL.md
+  intent: "Guide product managers through strategic roadmap planning by orchestrating\
+    \ prioritization, epic definition, stakeholder alignment, and release sequencing\
+    \ skills into a structured process. Use this to move from disconnected feature\
+    \ requests to a cohesive, outcome-driven roadmap that aligns stakeholders, sequences\
+    \ work logically, and communicates strategic intent\u9225\u6501voiding \"feature\
+    \ factory\" roadmaps that lack strategic narrative or customer-centric framing."
+- name: saas-economics-efficiency-metrics
+  description: "\u8BC4\u4F30 SaaS \u5355\u4F4D\u7ECF\u6D4E\u6A21\u578B\u548C\u8D44\
+    \u672C\u6548\u7387\u3002\u9002\u7528\u4E8E\u5224\u65AD\u4E1A\u52A1\u80FD\u5426\
+    \u9AD8\u6548\u6269\u5F20\uFF0C\u8FD8\u662F\u9700\u8981\u4FEE\u6B63\u3002"
+  type: component
+  path: skills\saas-economics-efficiency-metrics\SKILL.md
+  intent: Determine whether your SaaS business model is fundamentally viable and capital-efficient.
+    Use this to calculate unit economics, assess profitability, manage cash runway,
+    and decide when to scale vs. optimize. Essential for fundraising, board reporting,
+    and making smart investment trade-offs.
+- name: saas-revenue-growth-metrics
+  description: "\u8BA1\u7B97 SaaS \u6536\u5165\u3001\u7559\u5B58\u548C\u589E\u957F\
+    \u6307\u6807\u3002\u9002\u7528\u4E8E\u8BCA\u65AD\u589E\u957F\u52A8\u80FD\u3001\
+    \u6D41\u5931\u3001\u6269\u5F20\u6216\u4EA7\u54C1\u5E02\u573A\u5951\u5408\u4FE1\
+    \u53F7\u3002"
+  type: component
+  path: skills\saas-revenue-growth-metrics\SKILL.md
+  intent: Master revenue and retention metrics to understand SaaS business momentum,
+    evaluate product-market fit, and make data-driven decisions about growth investments.
+    Use this to calculate key metrics, interpret trends, identify problems early,
+    and communicate business health to stakeholders.
+- name: skill-authoring-workflow
+  description: "\u5C06\u539F\u59CB PM \u5185\u5BB9\u8F6C\u6210\u5408\u89C4\u3001\u53EF\
+    \u53D1\u5E03\u7684 skill\u3002\u9002\u7528\u4E8E\u521B\u5EFA\u6216\u66F4\u65B0\
+    \ repo skill \u4E14\u4E0D\u7834\u574F\u6807\u51C6\u65F6\u3002"
+  type: workflow
+  path: skills\skill-authoring-workflow\SKILL.md
+  intent: "\u4EE5\u4E0D\u6DF7\u4E71\u7684\u65B9\u5F0F\u521B\u5EFA\u6216\u66F4\u65B0\
+    \ PM skills\u3002\u8FD9\u4E2A\u5DE5\u4F5C\u6D41\u4F1A\u628A\u7C97\u7CD9\u7B14\u8BB0\
+    \u3001\u5DE5\u4F5C\u574A\u5185\u5BB9\u6216\u534A\u6210\u54C1 prompt \u5806\uFF0C\
+    \u8F6C\u6210\u771F\u6B63\u80FD\u901A\u8FC7\u6821\u9A8C\u3001\u4E5F\u786E\u5B9E\
+    \u5C5E\u4E8E\u672C\u4ED3\u5E93\u7684\u5408\u89C4 `skills/<skill-name>/SKILL.md`\
+    \ \u8D44\u4EA7\u3002"
+- name: storyboard
+  description: "\u521B\u5EFA\u4E00\u4E2A\u516D\u683C storyboard\uFF0C\u5C55\u793A\u7528\
+    \u6237\u4ECE\u95EE\u9898\u5230\u89E3\u51B3\u65B9\u6848\u7684\u65C5\u7A0B\u3002\
+    \u9002\u7528\u4E8E\u5FEB\u901F\u5F62\u6210\u53D9\u4E8B\uFF0C\u7528\u4E8E\u5BF9\
+    \u9F50\u3001\u6982\u5FF5\u8BC4\u5BA1\u6216\u6F14\u793A\u3002"
+  type: component
+  path: skills\storyboard\SKILL.md
+  intent: Create a 6-frame visual narrative that tells the story of a user's journey
+    from problem to solution, using the classic storytelling arc to build empathy,
+    illustrate value, and make abstract product concepts concrete. Use this to align
+    stakeholders, pitch features, communicate vision, or test if your solution resonates
+    emotionally before building it.
+- name: tam-sam-som-calculator
+  description: "\u5E26\u7740\u6E05\u6670\u5047\u8BBE\u3001\u65B9\u6CD5\u548C caveat\
+    \ \u8BA1\u7B97 TAM\u3001SAM \u548C SOM\u3002\u9002\u7528\u4E8E\u4E3A\u4EA7\u54C1\
+    \u60F3\u6CD5\u3001\u5546\u4E1A\u8BBA\u8BC1\u6216\u9AD8\u5C42\u8BC4\u5BA1\u505A\
+    \u5E02\u573A\u89C4\u6A21\u4F30\u7B97\u3002"
+  type: interactive
+  path: skills\tam-sam-som-calculator\SKILL.md
+  intent: "Guide product managers through calculating Total Addressable Market (TAM),\
+    \ Serviceable Available Market (SAM), and Serviceable Obtainable Market (SOM)\
+    \ for a product idea by asking adaptive, contextually relevant questions. Use\
+    \ this to build defensible market size estimates backed by real-world citations,\
+    \ economic projections, and population data\u9225\u6505ssential for pitching to\
+    \ investors, securing budget, or validating product-market fit."
+- name: user-story
+  description: "\u4F7F\u7528 Mike Cohn \u683C\u5F0F\u548C Gherkin acceptance criteria\
+    \ \u521B\u5EFA user story\u3002\u9002\u7528\u4E8E\u628A\u7528\u6237\u9700\u6C42\
+    \u8F6C\u5316\u4E3A\u53EF\u5F00\u53D1\u3001\u76EE\u6807\u6E05\u6670\u4E14\u53EF\
+    \u6D4B\u8BD5\u7684\u5DE5\u4F5C\u9879\u3002"
+  type: component
+  path: skills\user-story\SKILL.md
+  intent: Create clear, concise user stories that combine Mike Cohn's user story format
+    with Gherkin-style acceptance criteria. Use this to translate user needs into
+    actionable development work that focuses on outcomes, ensures shared understanding
+    between product and engineering, and provides testable success criteria.
+- name: user-story-mapping
+  description: "\u521B\u5EFA\u7528\u6237\u6545\u4E8B\u5730\u56FE\uFF0C\u6392\u51FA\
+    \u6D3B\u52A8\u3001\u6B65\u9AA4\u3001\u4EFB\u52A1\u548C\u53D1\u5E03\u5207\u7247\
+    \u3002\u9002\u7528\u4E8E\u56F4\u7ED5\u7528\u6237\u65C5\u7A0B\u89C4\u5212 workflow\u3001\
+    backlog \u6216 MVP\u3002"
+  type: component
+  path: skills\user-story-mapping\SKILL.md
+  intent: Visualize the user journey by creating a hierarchical map that breaks down
+    high-level activities into steps and tasks, organized left-to-right as a narrative
+    flow. Use this to build shared understanding across product, design, and engineering,
+    prioritize features based on user workflows, and identify gaps or opportunities
+    in the user experience.
+- name: user-story-mapping-workshop
+  description: "\u901A\u8FC7\u81EA\u9002\u5E94\u63D0\u95EE\u548C\u7ED3\u6784\u5316\
+    \u5730\u56FE\u8F93\u51FA\u8FD0\u884C\u7528\u6237\u6545\u4E8B\u6620\u5C04\u5DE5\
+    \u4F5C\u574A\u3002\u9002\u7528\u4E8E\u4E3A\u67D0\u4E2A workflow \u68B3\u7406 backbone\
+    \ activity\u3001task \u548C release slice\u3002"
+  type: interactive
+  path: skills\user-story-mapping-workshop\SKILL.md
+  intent: "Guide product managers through creating a user story map by asking adaptive\
+    \ questions about the system, users, workflow, and priorities\u9225\u6516hen generating\
+    \ a two-dimensional map with backbone (activities), user tasks, and release slices.\
+    \ Use this to move from flat backlogs to visual story maps that communicate the\
+    \ big picture, identify missing functionality, and enable meaningful release planning\u9225\
+    \u6501voiding \"context-free mulch\" where stories lose connection to the overall\
+    \ system narrative."
+- name: user-story-splitting
+  description: "\u7528\u6210\u719F\u7684\u62C6\u5206\u6A21\u5F0F\uFF0C\u628A\u5927\
+    \ story \u6216 epic \u62C6\u6210\u66F4\u5C0F\u3001\u53EF\u4EA4\u4ED8\u7684 story\u3002\
+    \u9002\u7528\u4E8E backlog \u9879\u8FC7\u5927\uFF0C\u96BE\u4EE5\u4F30\u7B97\u3001\
+    \u6392\u5E8F\u6216\u72EC\u7ACB\u53D1\u5E03\u65F6\u3002"
+  type: component
+  path: skills\user-story-splitting\SKILL.md
+  intent: Break down large user stories, epics, or features into smaller, independently
+    deliverable stories using systematic splitting patterns. Use this to make work
+    more manageable, reduce risk, enable faster feedback cycles, and maintain flow
+    in agile development. This skill applies to user stories, epics, and any work
+    that's too large to complete in a single sprint.
+- name: vp-cpo-readiness-advisor
+  description: "\u56F4\u7ED5\u51C6\u5907\u3001\u9762\u8BD5\u3001\u5165\u804C\u4E0E\
+    \u6821\u51C6\u56DB\u4E2A\u9636\u6BB5\uFF0C\u6307\u5BFC VP \u6216 CPO \u8F6C\u578B\
+    \u3002\u9002\u7528\u4E8E\u9AD8\u9636\u4EA7\u54C1\u7BA1\u7406\u8303\u56F4\u5FEB\
+    \u901F\u53D8\u5316\u65F6\u3002"
+  type: interactive
+  path: skills\vp-cpo-readiness-advisor\SKILL.md
+  intent: "\u7528\u81EA\u9002\u5E94\u63D0\u95EE\u548C\u6709\u9488\u5BF9\u6027\u7684\
+    \u8F85\u5BFC\uFF0C\u5E2E\u52A9 Director \u548C\u8D44\u6DF1\u4EA7\u54C1\u8D1F\u8D23\
+    \u4EBA\u5E94\u5BF9 VP \u6216 CPO \u8F6C\u578B\u4E2D\u7684\u5177\u4F53\u6311\u6218\
+    \u3002\u5B83\u4F1A\u5224\u65AD\u4F60\u6B63\u5904\u4E8E\u54EA\u4E00\u9636\u6BB5\
+    \uFF0C\u5E76\u7ED9\u51FA\u8D34\u5408\u60C5\u5883\u3001\u57FA\u4E8E\u771F\u5B9E\
+    \u7ECF\u9A8C\u7684\u5EFA\u8BAE\uFF0C\u800C\u4E0D\u662F\u6CDB\u6CDB\u7684\u9AD8\
+    \u7BA1\u804C\u4E1A\u5EFA\u8BAE\u3002"
+- name: workshop-facilitation
+  description: "\u4EE5\u5355\u6B65\u3001\u591A\u8F6E\u7684\u65B9\u5F0F\u4E3B\u6301\
+    \ workshop\u3002\u9002\u7528\u4E8E\u4EFB\u4F55\u9700\u8981\u7A33\u5B9A\u8282\u594F\
+    \u3001\u9009\u9879\u548C\u8FDB\u5EA6\u8DDF\u8E2A\u7684\u4EA4\u4E92\u5F0F skill\u3002"
+  type: interactive
+  path: skills\workshop-facilitation\SKILL.md
+  intent: "\u4E3A\u4EA4\u4E92\u5F0F skills \u63D0\u4F9B\u6807\u51C6 facilitation \u6A21\
+    \u5F0F\uFF1A\u4E00\u6B21\u8D70\u4E00\u6B65\uFF0C\u6E05\u695A\u5C55\u793A\u8FDB\
+    \u5EA6\uFF0C\u5728\u51B3\u7B56\u70B9\u7ED9\u51FA\u81EA\u9002\u5E94\u5EFA\u8BAE\
+    \uFF0C\u5E76\u53EF\u9884\u6D4B\u5730\u5904\u7406\u4E2D\u65AD\u3002"

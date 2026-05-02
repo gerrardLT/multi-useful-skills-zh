@@ -1,0 +1,43 @@
+{
+  "fixture": "qa-eval-checkout.html",
+  "bugs": [
+    {
+      "id": "broken-email-regex",
+      "category": "functional",
+      "severity": "high",
+      "description": "电子邮件验证接受“user@”为有效 - 正则表达式模式 [^@]+@[^@] 缺少域要求",
+      "detection_hint": "email|regex|validation|accepts|invalid|user@|pattern"
+    },
+    {
+      "id": "nan-total",
+      "category": "functional",
+      "severity": "high",
+      "description": "清除数量字段显示“总计：$NaN” - 空字符串上的 parseInt 返回 NaN，没有后备",
+      "detection_hint": "NaN|total|quantity|empty|price|calculation|clear"
+    },
+    {
+      "id": "cc-field-overflow",
+      "category": "visual",
+      "severity": "medium",
+      "description": "信用卡输入没有 maxlength 属性 - 输入 >20 个字符会导致文本溢出容器",
+      "detection_hint": "credit card|maxlength|overflow|cc|input|long|container"
+    },
+    {
+      "id": "missing-required-zip",
+      "category": "functional",
+      "severity": "medium",
+      "description": "邮政编码字段没有“必填”属性 - 可以在没有邮政编码的情况下提交表单",
+      "detection_hint": "zip|required|missing|form|submit|shipping|postal"
+    },
+    {
+      "id": "stripe-not-defined",
+      "category": "console",
+      "severity": "high",
+      "description": "表单提交触发“未捕获的引用错误：条带未定义” - 未加载支付 SDK",
+      "detection_hint": "stripe|ReferenceError|not defined|console|error|submit|payment"
+    }
+  ],
+  "total_bugs": 5,
+  "minimum_detection": 2,
+  "max_false_positives": 5
+}

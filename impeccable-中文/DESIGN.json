@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-23T00:00:00Z",
+  "title": "Design System: Impeccable",
+  "extensions": {
+    "colorMeta": {
+      "editorial-magenta": {
+        "role": "primary",
+        "displayName": "Editorial Magenta",
+        "description": "唯一鲜明的声音。用于主 CTA、激活导航、实时状态指示器。稀缺性本身就是设计选择。",
+        "tonalRamp": [
+          "oklch(22% 0.12 350)",
+          "oklch(32% 0.18 350)",
+          "oklch(42% 0.22 350)",
+          "oklch(52% 0.25 350)",
+          "oklch(60% 0.25 350)",
+          "oklch(72% 0.18 350)",
+          "oklch(84% 0.10 350)",
+          "oklch(94% 0.04 350)"
+        ]
+      },
+      "editorial-magenta-deep": {
+        "role": "accent",
+        "displayName": "Editorial Magenta Deep",
+        "description": "Editorial Magenta 的 hover / active 状态。轻微压暗，用于确认交互，而不是高声喧哗。"
+      },
+      "warm-ash-cream": {
+        "role": "neutral",
+        "displayName": "Warm Ash Cream",
+        "description": "主页面背景。带几乎不可察觉的洋红色调，与强调色形成潜意识层面的统一。",
+        "tonalRamp": [
+          "oklch(15% 0.005 350)",
+          "oklch(25% 0.005 350)",
+          "oklch(40% 0.005 350)",
+          "oklch(55% 0.005 350)",
+          "oklch(70% 0.005 350)",
+          "oklch(82% 0.005 350)",
+          "oklch(92% 0.005 350)",
+          "oklch(96% 0.005 350)"
+        ]
+      },
+      "crisp-paper-white": {
+        "role": "neutral",
+        "displayName": "Crisp Paper White",
+        "description": "用于反相文字时刻（深底白字 CTA）和需要最大对比的表面。"
+      },
+      "deep-graphite": {
+        "role": "neutral",
+        "displayName": "Deep Graphite",
+        "description": "主要文本色和主 CTA 背景色。比纯黑更柔和，在暖纸背景上读起来像自信而不具攻击性。",
+        "tonalRamp": [
+          "oklch(10% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(40% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(92% 0 0)",
+          "oklch(98% 0 0)"
+        ]
+      },
+      "soft-charcoal": {
+        "role": "neutral",
+        "displayName": "Soft Charcoal",
+        "description": "次级文本，用于标语、引导段落和辅助文案。"
+      },
+      "mid-ash": {
+        "role": "neutral",
+        "displayName": "Mid Ash",
+        "description": "三级文本，用于微型标签、图注和元信息行，读起来像有意后退的元数据。"
+      },
+      "paper-mist": {
+        "role": "neutral",
+        "displayName": "Paper Mist",
+        "description": "发丝级边框、分区分隔线和几乎不可见的结构缝隙。"
+      },
+      "magenta-whisper": {
+        "role": "accent",
+        "displayName": "Magenta Whisper",
+        "description": "hover 时位于强调元素下方的漫射辉光背景，也用于细微的选中高亮。"
+      },
+      "magenta-veil": {
+        "role": "accent",
+        "displayName": "Magenta Veil",
+        "description": "更强一些的半透明色调，用于 focus ring 和强调包裹层。"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "仅用于 hero 标题。轻字重斜体，营造作者署名般的气质。",
+        "style": "italic"
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "用于章节标题，更具编辑感的大型时刻。"
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "用于 hero 标语 / section leads，是更安静的第二显示层声音。",
+        "style": "italic"
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "用于段落正文，行宽限制在 65–75ch 以保证可读性。"
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "每页一到两段的 lead 段落，行距略放松。"
+      },
+      "supporting": {
+        "displayName": "Supporting",
+        "purpose": "用于图注、脚注和辅助上下文。"
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "用于 CTA 标签。短、硬、直接。全大写并带字距。"
+      },
+      "micro-label": {
+        "displayName": "Micro-Label",
+        "purpose": "用于 \"Works with\"、\"What's included\"、\"v3.0 Changelog\" 这类微标签。"
+      },
+      "mono": {
+        "displayName": "Monospace Meta",
+        "purpose": "用于行内文中的命令名，以及元素周期表式卡片标签。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "Soft Hover Lift",
+        "value": "0 4px 24px -4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.06)",
+        "purpose": "卡片和交互表面的默认 hover 响应。"
+      },
+      {
+        "name": "Lifted Card",
+        "value": "0 20px 40px rgba(0,0,0,0.08)",
+        "purpose": "刻意抬升的内容，如特色卡片和安装区块。"
+      },
+      {
+        "name": "Accent Glow",
+        "value": "0 20px 60px oklch(60% 0.25 350 / 0.15)",
+        "purpose": "用于稀有磁性时刻的洋红色环境阴影。节制使用。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "主曲线，具有 expo-out 的感觉，让对象平滑减速。"
+      },
+      {
+        "name": "ease-out-quint",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "更利落一点的替代曲线，适合紧凑元素上的 transform。"
+      },
+      {
+        "name": "duration-fast",
+        "value": "0.15s",
+        "purpose": "用于状态切换（颜色、透明度）。"
+      },
+      {
+        "name": "duration-base",
+        "value": "0.3s",
+        "purpose": "用于 transform 和非颜色变化的默认时长。"
+      },
+      {
+        "name": "duration-slow",
+        "value": "0.6s",
+        "purpose": "用于编排式入场动效。"
+      }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Primary CTA",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "锐利、方正、全大写，代表编辑感签名。",
+      "html": "<button class=\"ds-btn-primary\">GET STARTED</button>",
+      "css": ".ds-btn-primary { display: inline-block; padding: 16px 48px; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: oklch(98% 0 0); background: oklch(10% 0 0); border: none; border-radius: 0; cursor: pointer; transition: transform 0.2s ease, background 0.2s ease; } .ds-btn-primary:hover { transform: translateY(-2px); background: oklch(60% 0.25 350); }"
+    },
+    {
+      "name": "Inline Text Link",
+      "kind": "button",
+      "description": "次级动作。系统里不存在盒状的次级按钮。",
+      "html": "<a href=\"#\" class=\"ds-link\">Read the docs</a>",
+      "css": ".ds-link { color: oklch(10% 0 0); font-family: 'Instrument Sans', system-ui, sans-serif; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color 0.2s ease; } .ds-link:hover { color: oklch(60% 0.25 350); }"
+    },
+    {
+      "name": "Email Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "发丝级边框、透明背景、洋红 focus glow。",
+      "html": "<input type=\"email\" class=\"ds-input-email\" placeholder=\"you@example.com\">",
+      "css": ".ds-input-email { width: 100%; padding: 10px 14px; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 0.9rem; color: oklch(10% 0 0); background: transparent; border: 1px solid oklch(92% 0 0); border-radius: 6px; outline: none; transition: border-color 0.15s ease, box-shadow 0.15s ease; } .ds-input-email::placeholder { color: oklch(55% 0 0); } .ds-input-email:focus { border-color: oklch(60% 0.25 350); box-shadow: 0 0 0 3px oklch(60% 0.25 350 / 0.15); }"
+    },
+    {
+      "name": "Micro-Label",
+      "kind": "chip",
+      "description": "\"What's included\" 风格。全大写 mono，宽字距。",
+      "html": "<span class=\"ds-microlabel\">What's included</span>",
+      "css": ".ds-microlabel { display: inline-block; font-family: 'Space Grotesk', ui-monospace, monospace; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(55% 0 0); }"
+    },
+    {
+      "name": "Site Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "62px 紧凑导航条。静止时无下划线，激活时使用强调色下划线。",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">/ Impeccable</span><div class=\"ds-nav-links\"><a href=\"#\" class=\"ds-nav-link ds-nav-active\">Home</a><a href=\"#\" class=\"ds-nav-link\">Docs</a><a href=\"#\" class=\"ds-nav-link\">Anti-patterns</a></div></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 20px; background: oklch(96% 0.005 350); font-family: 'Instrument Sans', system-ui, sans-serif; } .ds-nav-brand { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.05rem; color: oklch(10% 0 0); } .ds-nav-links { display: flex; gap: 16px; } .ds-nav-link { font-size: 0.85rem; font-weight: 500; color: oklch(10% 0 0); text-decoration: none; padding-bottom: 3px; border-bottom: 1px solid transparent; transition: color 0.2s ease, border-color 0.2s ease; } .ds-nav-link:hover { color: oklch(60% 0.25 350); } .ds-nav-active { border-bottom-color: oklch(60% 0.25 350); }"
+    },
+    {
+      "name": "Feature Card",
+      "kind": "card",
+      "refersTo": "card-feature",
+      "description": "标准卡片：12px 圆角、发丝级边框，hover 时轻抬并带柔和阴影。",
+      "html": "<article class=\"ds-card\"><h3 class=\"ds-card-title\">/impeccable polish</h3><p class=\"ds-card-body\">Sweep a site for AI-tool tells and refine typography, spacing, color in one pass.</p></article>",
+      "css": ".ds-card { padding: 20px 22px; background: oklch(98% 0 0); border: 1px solid oklch(92% 0 0); border-radius: 12px; transition: transform 0.2s ease, box-shadow 0.2s ease; font-family: 'Instrument Sans', system-ui, sans-serif; } .ds-card:hover { transform: translateY(-2px); box-shadow: 0 4px 24px -4px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.06); } .ds-card-title { font-family: 'Space Grotesk', ui-monospace, monospace; font-size: 0.85rem; font-weight: 500; color: oklch(10% 0 0); margin: 0 0 6px; } .ds-card-body { font-size: 0.85rem; line-height: 1.55; color: oklch(25% 0 0); margin: 0; }"
+    }
+  ]
+}

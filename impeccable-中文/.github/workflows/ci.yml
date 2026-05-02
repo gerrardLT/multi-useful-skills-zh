@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        
+      - name: 设置 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 设置 Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 安装依赖
+        run: bun install
+
+      - name: 运行测试
+        run: bun run test
+        
+      - name: 构建
+        run: bun run build
+        
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: impeccable-dist
+          path: dist/
+          retention-days: 7

@@ -1,0 +1,12 @@
+{
+  "name": "impeccable",
+  "description": "为前端开发提供设计流畅度。1 个 skill，含 23 个命令（如 /impeccable polish、/impeccable audit、/impeccable critique 等），并附带精选 anti-pattern 检测能力。",
+  "version": "3.0.4",
+  "author": {
+    "name": "Paul Bakaus",
+    "email": "paul@paulbakaus.com"
+  },
+  "homepage": "https://impeccable.style",
+  "repository": "https://github.com/pbakaus/impeccable",
+  "skills": "./skills/"
+}

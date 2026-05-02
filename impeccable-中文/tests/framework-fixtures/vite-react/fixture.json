@@ -1,0 +1,17 @@
+{
+  "name": "Vite + React",
+  "config": {
+    "files": ["index.html"],
+    "insertBefore": "</body>",
+    "commentSyntax": "html"
+  },
+  "sourceFiles": ["index.html", "src/App.jsx"],
+  "generatedFiles": [],
+  "wrapCases": [
+    {
+      "name": "在源 JSX 中包裹 hero 标题",
+      "args": { "classes": "hero-title", "tag": "h1" },
+      "expectedFile": "src/App.jsx"
+    }
+  ]
+}

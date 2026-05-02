@@ -1,0 +1,94 @@
+{
+  "craft": {
+    "description": "完整的“先确认 brief 再构建”流程。会先进行多轮 shape discovery，在可用时处理 visual probe 和 north-star mock 关卡，然后才开始构建并进行可视化迭代。适合从零到一端到端构建新功能时使用。",
+    "argumentHint": "[feature description]"
+  },
+  "teach": {
+    "description": "为项目收集设计上下文。当上下文缺失时，会运行多轮 discovery interview，并写出 PRODUCT.md（战略层：用户、品牌、原则）；如果代码已存在可供分析，也会写出 DESIGN.md（视觉层：颜色、字体、组件）。其他所有命令都会先读取这两个文件再开始工作。每个项目只需运行一次。",
+    "argumentHint": ""
+  },
+  "document": {
+    "description": "生成一份 DESIGN.md，用来记录当前视觉设计系统。会从代码库中自动提取颜色、字体、间距、圆角和组件模式，然后请用户确认用于描述整体氛围和色彩气质的语言。遵循 Google Stitch 的 DESIGN.md 格式，因此该文件可被其他工具直接使用。适合在你需要一份 AI agent 能遵循、从而保持品牌一致性的视觉设计规范时使用。",
+    "argumentHint": ""
+  },
+  "extract": {
+    "description": "把可复用的模式、组件和 design tokens 提取进设计系统。它会识别重复模式并将其合并。适合在代码库各处已经出现漂移，而你希望把它们重新拉回统一系统时使用。",
+    "argumentHint": "[target]"
+  },
+  "live": {
+    "description": "交互式 live variant 模式。可在浏览器中选择元素、指定设计动作，并通过 HMR 热替换 AI 生成的 HTML+CSS variants。需要有正在运行的 dev server。适合在你想实时可视化实验不同设计方案时使用。",
+    "argumentHint": ""
+  },
+  "adapt": {
+    "description": "让设计适配不同屏幕尺寸、设备、上下文或平台。会处理 breakpoints、流式布局和触控目标。适合在用户提到响应式设计、移动端布局、断点、视口适配或跨设备兼容性时使用。",
+    "argumentHint": "[target] [context (mobile, tablet, print...)]"
+  },
+  "animate": {
+    "description": "评估一个功能，并通过有目的的动画、微交互和 motion effects 来提升可用性与愉悦感。适合在用户提到添加动画、过渡、微交互、motion design、hover effects，或想让界面更有生命力时使用。",
+    "argumentHint": "[target]"
+  },
+  "audit": {
+    "description": "围绕可访问性、性能、主题一致性、响应式设计和 anti-patterns 运行技术质量检查。会生成带 P0-P3 严重级别和行动计划的评分报告。适合在用户想做 accessibility 检查、performance audit 或技术质量评审时使用。",
+    "argumentHint": "[area (feature, page, component...)]"
+  },
+  "bolder": {
+    "description": "放大那些过于安全或无聊的设计，让它们变得更有视觉冲击力和刺激性，同时保留可用性。适合在用户说设计太 bland、太 generic、太安全、缺乏个性，或者想要更强视觉影响力时使用。",
+    "argumentHint": "[target]"
+  },
+  "clarify": {
+    "description": "改进不清楚的 UX copy、错误提示、microcopy、标签和说明，让界面更容易理解。适合在用户提到文本令人困惑、标签不清晰、错误信息糟糕、说明难以跟随，或想提升 UX writing 时使用。",
+    "argumentHint": "[target]"
+  },
+  "colorize": {
+    "description": "为过于单色或缺乏视觉趣味的功能加入更有策略的颜色，使界面更有吸引力和表现力。适合在用户提到设计太灰、太 dull、缺少温度、需要更多颜色，或者想要更鲜活的色彩方案时使用。",
+    "argumentHint": "[target]"
+  },
+  "critique": {
+    "description": "从 UX 视角评估设计，覆盖视觉层级、信息架构、情绪共鸣、认知负荷和整体质量，并结合量化评分、persona 测试、自动 anti-pattern 检测与可执行反馈。适合在用户要求 review、critique、evaluate，或想获取某个设计 / 组件反馈时使用。",
+    "argumentHint": "[area (feature, page, component...)]"
+  },
+  "delight": {
+    "description": "加入令人愉快的时刻、个性与意外小惊喜，让界面更值得记住、更让人愿意使用。把“功能性”提升为“有愉悦感”。适合在用户想增加 polish、个性、动画、微交互、delight，或想让界面更有趣更难忘时使用。",
+    "argumentHint": "[target]"
+  },
+  "distill": {
+    "description": "把设计提炼到本质，移除不必要的复杂性。优秀设计应当简单、有力、干净。适合在用户想要简化、去杂、降低噪声、移除元素，或让 UI 更干净聚焦时使用。",
+    "argumentHint": "[target]"
+  },
+  "harden": {
+    "description": "让界面达到 production-ready：包括错误处理、i18n、文本溢出、边界情况管理，以及面对真实数据时的韧性。适合在用户想 harden、想让界面更生产可用、处理边界情况、增加错误状态，或修复 overflow 与 i18n 问题时使用。",
+    "argumentHint": "[target]"
+  },
+  "onboard": {
+    "description": "设计 onboarding 流程、首次使用体验和 empty states，帮助新用户更快获得价值。涵盖欢迎页、账户设置、渐进式披露、上下文 tooltips、功能公告和激活时刻。适合在用户提到 onboarding、first-time users、empty states、activation、getting started、新用户流程或 aha moment 时使用。",
+    "argumentHint": "[target]"
+  },
+  "layout": {
+    "description": "改进布局、间距和视觉节奏。用于修正单调网格、不一致间距和薄弱视觉层级。适合在用户提到 layout 感觉不对、spacing 有问题、visual hierarchy 不够、界面拥挤、对齐糟糕，或想要更好的构图时使用。",
+    "argumentHint": "[target]"
+  },
+  "optimize": {
+    "description": "诊断并修复 UI 在加载速度、渲染、动画、图片和 bundle 体积上的性能问题。适合在用户提到界面慢、laggy、janky、performance、bundle size、load time，或想让体验更快更顺时使用。",
+    "argumentHint": "[target]"
+  },
+  "overdrive": {
+    "description": "把界面推到传统边界之外，采用更具技术野心的实现方式，如 shaders、spring physics、scroll-driven reveals、60fps animations。适合在用户想要 wow 感、想让人印象深刻、想 all-out，或者想做出真正非凡体验时使用。",
+    "argumentHint": "[target]"
+  },
+  "polish": {
+    "description": "在发版前做最终质量打磨，修正对齐、间距、一致性以及微细节问题。适合在用户提到 polish、finishing touches、pre-launch review、感觉哪里不对，或想把结果从“不错”推到“很到位”时使用。",
+    "argumentHint": "[target]"
+  },
+  "quieter": {
+    "description": "收敛那些过于激进或过度刺激的设计，在不牺牲质量的前提下降低视觉强度。适合在用户提到太 bold、太吵、太压迫、太 aggressive、太 garish，或想要更平静、更精致的审美时使用。",
+    "argumentHint": "[target]"
+  },
+  "shape": {
+    "description": "在动代码前先规划 UX 和 UI。会运行必需的多轮 discovery interview，在可用时使用 visual probes，并产出一份经过用户确认、可供实现的设计 brief。",
+    "argumentHint": "[feature to shape]"
+  },
+  "typeset": {
+    "description": "通过修复字体选择、层级、尺寸、字重和可读性来提升排版，让文字看起来更有设计感。适合在用户提到字体、type、readability、text hierarchy、字号看起来不对，或想让排版更精致、更有意图时使用。",
+    "argumentHint": "[target]"
+  }
+}

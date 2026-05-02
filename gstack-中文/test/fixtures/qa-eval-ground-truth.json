@@ -1,0 +1,43 @@
+{
+  "fixture": "qa-eval.html",
+  "bugs": [
+    {
+      "id": "broken-link",
+      "category": "functional",
+      "severity": "medium",
+      "description": "导航链接“资源”指向 /nonexistent-404-page 并返回 404",
+      "detection_hint": "link|404|broken|dead|nonexistent|Resources"
+    },
+    {
+      "id": "disabled-submit",
+      "category": "functional",
+      "severity": "high",
+      "description": "联系表单提交按钮具有永久“禁用”属性 - 表单永远无法提交",
+      "detection_hint": "disabled|submit|button|form|cannot submit|contact"
+    },
+    {
+      "id": "content-overflow",
+      "category": "visual",
+      "severity": "medium",
+      "description": "统计文本被溢出剪切：隐藏容器 — 内容宽于 400px 容器",
+      "detection_hint": "overflow|clipped|truncated|hidden|text cut|statistics"
+    },
+    {
+      "id": "missing-alt",
+      "category": "accessibility",
+      "severity": "medium",
+      "description": "徽标图像 (<img src='/logo.png'>) 没有 alt 属性",
+      "detection_hint": "alt|accessibility|image|a11y|missing alt|logo"
+    },
+    {
+      "id": "console-error",
+      "category": "console",
+      "severity": "high",
+      "description": "页面加载时出现类型错误：无法读取未定义的属性（读取“地图”）",
+      "detection_hint": "console|error|TypeError|undefined|map"
+    }
+  ],
+  "total_bugs": 5,
+  "minimum_detection": 2,
+  "max_false_positives": 5
+}

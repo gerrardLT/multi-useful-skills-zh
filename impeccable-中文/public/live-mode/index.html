@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实时模式 | Impeccable</title>
+  <meta name="description" content="Iterate on UI in the browser. Pick an element, drop a comment, get three production-quality variants, accept one, and it writes back to source. /impeccable live.">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="canonical" href="https://impeccable.style/live-mode">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/sub-pages.css">
+  
+    <link rel="stylesheet" href="../css/live-mode.css">
+    <script type="module">
+      import { initLiveDemo } from "../js/components/live-demo.js";
+      document.addEventListener("DOMContentLoaded", initLiveDemo);
+    </script>
+</head>
+<body class="sub-page live-mode-page-body">
+  <a href="#main" class="skip-link">跳到正文</a>
+  <!-- site-header v1 -->
+<header class="site-header" data-site-header>
+  <a href="/" class="site-header-brand" aria-label="Impeccable 首页">
+    <svg class="site-header-brand-logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#1a1a1a"/><text x="16" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#f5f3ef" text-anchor="middle">/</text></svg>
+    <span class="site-header-brand-name">Impeccable</span>
+  </a>
+  <div class="site-header-right">
+    <nav class="site-header-nav" aria-label="Primary">
+      <a href="/" data-nav="home">首页</a>
+      <a href="/designing" data-nav="designing">设计</a>
+      <a href="/docs" data-nav="docs">文档</a>
+      <a href="/slop" data-nav="slop">Slop</a>
+      <a href="/live-mode" data-nav="live" aria-current="page">实时模式</a>
+    </nav>
+    <a href="https://github.com/pbakaus/impeccable" class="site-header-github" target="_blank" rel="noopener" aria-label="Impeccable GitHub，21k 星标">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      <span class="site-header-github-label">21k</span>
+      <svg class="site-header-github-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.76 6.36L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.24-.91L12 2z"/></svg>
+    </a>
+  </div>
+</header>
+  <main id="main">
+
+<div class="live-mode-page">
+  <header class="live-mode-page-header">
+    <p class="live-mode-page-eyebrow">v3.0 新功能 <span class="live-mode-page-eyebrow-badge">Alpha</span></p>
+    <h1 class="live-mode-page-title">实时模式</h1>
+    <p class="live-mode-page-lede">直接在浏览器里选中任意元素。写一句评论，或者画一笔。你的框架会通过 HMR 换上 3 个高质量变体。选中你要的那个，它就会回写到源码。</p>
+    <p class="live-mode-page-alpha-note"><strong>为什么还是 Alpha：</strong>实时模式已经能端到端跑通，也已经可以试用，但还需要继续覆盖真实仓库和各类框架配置。少见环境里请预期还有毛边，哪里坏了请直接反馈。</p>
+    <div class="live-mode-start" aria-label="启动实时模式命令">
+      <span class="live-mode-start-prompt">$</span>
+      <code class="live-mode-start-cmd">/impeccable live</code>
+      <button class="live-mode-start-copy" type="button" aria-label="复制命令" data-copy="/impeccable live">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="live-mode-demo-wrap" aria-label="实时模式交互演示">
+    
+<div class="live-demo" id="live-demo" aria-label="Live Mode interactive demo loop">
+  <div class="live-demo-frame-col"><div class="live-demo-frame">
+    <div class="live-demo-chrome">
+      <span class="live-demo-dot"></span>
+      <span class="live-demo-dot"></span>
+      <span class="live-demo-dot"></span>
+      <span class="live-demo-url">localhost:3000</span>
+    </div>
+
+    <div class="live-demo-stage">
+      <div class="live-demo-skeleton" aria-hidden="true">
+        <div class="live-demo-skel-nav">
+          <span class="live-demo-skel-logo"></span>
+          <span class="live-demo-skel-link"></span>
+          <span class="live-demo-skel-link"></span>
+          <span class="live-demo-skel-link"></span>
+          <span class="live-demo-skel-cta"></span>
+        </div>
+        <div class="live-demo-skel-heading"></div>
+        <div class="live-demo-skel-line"></div>
+        <div class="live-demo-skel-line live-demo-skel-line--short"></div>
+      </div>
+
+      <div class="live-demo-target" data-demo-target>
+        <div class="live-demo-variant is-active" data-variant="original">
+          <div class="live-demo-card live-demo-card--plain">
+            <span class="live-demo-card-kicker">Newsletter</span>
+            <h3>Subscribe for updates</h3>
+            <p>Monthly-ish design notes.</p>
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+        <div class="live-demo-variant" data-variant="1">
+          <div class="live-demo-card live-demo-card--v1">
+            <span class="live-demo-card-kicker">No. 04</span>
+            <h3>Letters, <em>occasionally</em>.</h3>
+            <p>A postcard from the editor, about once a month. No tracking pixels, no "just checking in."</p>
+            <button type="button">Send me one</button>
+          </div>
+        </div>
+        <div class="live-demo-variant" data-variant="2">
+          <div class="live-demo-card live-demo-card--v2">
+            <div class="live-demo-card-stamp">☞</div>
+            <span class="live-demo-card-kicker">Dispatch</span>
+            <h3>Design&nbsp;notes, <br>every&nbsp;other<br>Thursday.</h3>
+            <button type="button">Join the list →</button>
+          </div>
+        </div>
+        <div class="live-demo-variant" data-variant="3">
+          <div class="live-demo-card live-demo-card--v3">
+            <div class="live-demo-card-sticker"><span>&star;</span><span>&star;</span><span>&star;</span></div>
+            <span class="live-demo-card-kicker">Field Notes</span>
+            <h3>A monthly letter, for people who still read email for pleasure.</h3>
+            <button type="button">Receive the letter <span aria-hidden="true">✺</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="live-demo-outline" data-demo-outline aria-hidden="true"></div>
+
+      <div class="live-demo-annotations" data-demo-annotations aria-hidden="true">
+        <svg class="live-demo-stroke" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M 10,40 Q 60,10 110,38 T 210,32 T 290,20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" pathLength="1"/>
+        </svg>
+        <div class="live-demo-comment">more playful</div>
+      </div>
+
+      <div class="live-demo-ctx" data-demo-ctx data-phase="hidden">
+        <div class="live-demo-ctx-row live-demo-ctx-row--configure">
+          <button type="button" class="live-demo-ctx-pill" data-demo-ctx-pill>
+            <span data-demo-cmd-name>delight</span>
+            <span class="live-demo-ctx-pill-caret" aria-hidden="true">▾</span>
+          </button>
+          <span class="live-demo-ctx-input" data-demo-input>
+            <span data-demo-input-text></span><span class="live-demo-ctx-caret"></span>
+          </span>
+          <button type="button" class="live-demo-ctx-count">×3</button>
+          <button type="button" class="live-demo-ctx-go" data-demo-go>Go <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="live-demo-ctx-row live-demo-ctx-row--generating">
+          <span class="live-demo-ctx-spinner" aria-hidden="true"></span>
+          <span>Generating variants…</span>
+        </div>
+        <div class="live-demo-ctx-row live-demo-ctx-row--cycling">
+          <button type="button" class="live-demo-ctx-nav" aria-label="Previous variant">‹</button>
+          <span class="live-demo-ctx-counter" data-demo-counter>1 / 3</span>
+          <button type="button" class="live-demo-ctx-nav" aria-label="Next variant">›</button>
+          <span class="live-demo-ctx-divider"></span>
+          <button type="button" class="live-demo-ctx-discard" aria-label="Discard">✕</button>
+          <button type="button" class="live-demo-ctx-accept" data-demo-accept>Accept</button>
+        </div>
+        <div class="live-demo-ctx-row live-demo-ctx-row--accepted">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Variant 3 written to source</span>
+        </div>
+      </div>
+
+      <div class="live-demo-cursor" data-demo-cursor aria-hidden="true">
+        <svg width="18" height="22" viewBox="0 0 18 22" fill="none">
+          <path d="M1 1 L1 17 L5 13 L8 20 L11 19 L7.5 12 L13 12 Z" fill="#111" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="live-demo-gbar" data-demo-gbar>
+      <span class="live-demo-gbar-brand">/</span>
+      <button type="button" class="live-demo-gbar-btn is-active" data-demo-gbar-pick>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+        <span>Pick</span>
+      </button>
+      <button type="button" class="live-demo-gbar-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+      <button type="button" class="live-demo-gbar-btn">
+        <span class="live-demo-gbar-dmd" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      </button>
+      <span class="live-demo-gbar-divider"></span>
+      <button type="button" class="live-demo-gbar-x" aria-label="Exit live mode">✕</button>
+    </div>
+  </div>
+  </div>
+</div>
+    <p class="live-mode-demo-caption">点击演示框，或把它滚动到视口里，就会开始循环。遵循 <code>prefers-reduced-motion</code>。</p>
+  </section>
+
+  <section class="live-mode-stages" aria-label="实时模式会发生什么">
+    <h2 class="live-mode-stages-title">整个过程，分 3 步</h2>
+    <div class="live-mode-stages-grid">
+      <article class="live-mode-stage">
+        <span class="live-mode-stage-num">01 &middot; 选择</span>
+        <h3 class="live-mode-stage-name">指给它看哪里不对</h3>
+        <p class="live-mode-stage-desc">在正在运行的开发页面里点任意元素。用评论 pin 标出问题点，画一笔圈出你想改的部分，或者直接写一句“更有趣一点”。</p>
+        <div class="live-mode-stage-viz">
+          <div class="docs-viz-picker-row" style="min-height:72px;padding:10px">
+            <div class="docs-viz-picker-target" style="font-size:12px;padding:6px 12px">
+              Newsletter card
+              <span class="docs-viz-picker-pin" style="width:18px;height:18px;font-size:9px">1</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="live-mode-stage">
+        <span class="live-mode-stage-num">02 &middot; 生成</span>
+        <h3 class="live-mode-stage-name">3 个真的不一样的方向</h3>
+        <p class="live-mode-stage-desc">这些变体会锚定到不同原型，而不是只改改颜色。每个方案都会优先探索不同主轴：层级、字体、密度、布局或配色策略。</p>
+        <div class="live-mode-stage-viz">
+          <div class="docs-viz-variants" style="width:100%;gap:4px">
+            <div class="docs-viz-variant docs-viz-variant--v1" style="min-height:44px;padding:6px"><span class="docs-viz-variant-kicker" style="font-size:8px">No.04</span></div>
+            <div class="docs-viz-variant docs-viz-variant--v2 is-active" style="min-height:44px;padding:6px"><span class="docs-viz-variant-kicker" style="font-size:8px">Dispatch</span></div>
+            <div class="docs-viz-variant docs-viz-variant--v3" style="min-height:44px;padding:6px"><span class="docs-viz-variant-kicker" style="font-size:8px">Field</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="live-mode-stage">
+        <span class="live-mode-stage-num">03 &middot; 确认</span>
+        <h3 class="live-mode-stage-name">真正落回源码</h3>
+        <p class="live-mode-stage-desc">被接受的变体会替换掉源文件里的目标元素。CSS 会并回真实样式表，而不是塞成内联。3 个都不要也没关系，原样保留。</p>
+        <div class="live-mode-stage-viz">
+          <span class="docs-viz-accept-pill">已将 Variant 2 写回源码</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="live-mode-pathways" aria-label="下一步去哪里">
+    <h2 class="live-mode-pathways-title">接着看这里</h2>
+    <div class="live-mode-pathways-grid">
+      <a class="live-mode-pathway" href="/tutorials/iterate-live">
+        <span class="live-mode-pathway-kind">教程</span>
+        <h3 class="live-mode-pathway-title">按步骤走一遍</h3>
+        <p class="live-mode-pathway-desc">10 分钟带你从第一次运行走到接受变体。会覆盖 CSP 补丁、picker 操作，以及生成文件的 fallback 流程。</p>
+        <span class="live-mode-pathway-cta">打开教程 &rarr;</span>
+      </a>
+      <a class="live-mode-pathway" href="/docs/live">
+        <span class="live-mode-pathway-kind">参考</span>
+        <h3 class="live-mode-pathway-title">完整命令参考</h3>
+        <p class="live-mode-pathway-desc">这里是 AI harness 在运行 <code>/impeccable live</code> 时会读到的全部内容：轮询循环、wrap/accept 辅助逻辑、CSP 模板，以及所有事件结构。</p>
+        <span class="live-mode-pathway-cta">查看参考 &rarr;</span>
+      </a>
+      <a class="live-mode-pathway" href="/#downloads">
+        <span class="live-mode-pathway-kind">安装</span>
+        <h3 class="live-mode-pathway-title">先把 Impeccable 装好</h3>
+        <p class="live-mode-pathway-desc">先安装一次 skill 和 CLI，然后就在你的 AI harness 里运行 <code>/impeccable live</code>。支持 Claude Code、Cursor、Codex、Gemini 等。</p>
+        <span class="live-mode-pathway-cta">查看安装步骤 &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="live-mode-frameworks" aria-label="支持的框架">
+    <span class="live-mode-frameworks-label">支持的开发服务器</span>
+    <ul class="live-mode-frameworks-list">
+      <li>Vite</li>
+      <li>Next.js（含 monorepo）</li>
+      <li>SvelteKit</li>
+      <li>Astro</li>
+      <li>Nuxt</li>
+      <li>Bun</li>
+      <li>纯静态 HTML</li>
+    </ul>
+  </section>
+</div>
+  </main>
+  <script>
+    // Copy buttons on rendered code blocks
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-copy]');
+      if (!btn) return;
+      const text = btn.getAttribute('data-copy');
+      if (!text) return;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.classList.add('is-copied');
+        setTimeout(() => btn.classList.remove('is-copied'), 1500);
+      }).catch(() => {});
+    });
+
+    // Mobile sidebar toggle (shown on narrow viewports, hidden on desktop).
+    document.addEventListener('click', (e) => {
+      const toggle = e.target.closest('.skills-sidebar-toggle');
+      if (!toggle) return;
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+    });
+
+    // Before/after split-compare: drag on touch, hover OR drag on mouse.
+    // Pointer events attach to the padded .split-comparison wrapper so
+    // there is a ~20px invisible buffer around the visible box. The
+    // divider only snaps back when the pointer leaves that outer buffer.
+    (function initSplitCompare() {
+      const wrappers = document.querySelectorAll('.split-comparison');
+      if (wrappers.length === 0) return;
+      const hasHover = matchMedia('(hover: hover)').matches;
+      const DEFAULT_POSITION = 50;
+
+      for (const wrapper of wrappers) {
+        const container = wrapper.querySelector('.split-container');
+        const splitAfter = wrapper.querySelector('.split-after');
+        const splitDivider = wrapper.querySelector('.split-divider');
+        if (!container || !splitAfter || !splitDivider) continue;
+
+        const tanAngle = Math.tan(10 * Math.PI / 180);
+        let skewOffset = 8;
+        const recalcSkew = () => {
+          const r = container.getBoundingClientRect();
+          if (r.width > 0 && r.height > 0) {
+            skewOffset = 50 * r.height * tanAngle / r.width;
+          }
+        };
+        recalcSkew();
+        window.addEventListener('resize', recalcSkew, { passive: true });
+
+        let targetX = DEFAULT_POSITION;
+        let currentX = DEFAULT_POSITION;
+        let rafId = null;
+
+        const paint = (pct) => {
+          const x = Math.max(-skewOffset, Math.min(100 + skewOffset, pct));
+          splitAfter.style.clipPath =
+            `polygon(${x + skewOffset}% 0%, 100% 0%, 100% 100%, ${x - skewOffset}% 100%)`;
+          splitDivider.style.left = `${x}%`;
+        };
+
+        const step = () => {
+          currentX += (targetX - currentX) * 0.2;
+          if (Math.abs(targetX - currentX) < 0.1) {
+            currentX = targetX;
+            rafId = null;
+          } else {
+            rafId = requestAnimationFrame(step);
+          }
+          paint(currentX);
+        };
+
+        const setTarget = (pct) => {
+          targetX = pct;
+          if (rafId === null) rafId = requestAnimationFrame(step);
+        };
+
+        paint(DEFAULT_POSITION);
+
+        // Percentage is always relative to the VISIBLE .split-container,
+        // not the padded .split-comparison wrapper. The pointer event
+        // target is the wrapper but the clip-path math uses the inner box.
+        const pctFromClientX = (clientX) => {
+          const rect = container.getBoundingClientRect();
+          return ((clientX - rect.left) / rect.width) * 100;
+        };
+
+        let hovering = false;
+        let dragging = false;
+
+        wrapper.addEventListener('pointerenter', (e) => {
+          if (hasHover && e.pointerType === 'mouse') {
+            hovering = true;
+          }
+        });
+
+        wrapper.addEventListener('pointerdown', (e) => {
+          dragging = true;
+          wrapper.setPointerCapture(e.pointerId);
+          setTarget(pctFromClientX(e.clientX));
+        });
+
+        wrapper.addEventListener('pointermove', (e) => {
+          if (dragging || hovering) {
+            setTarget(pctFromClientX(e.clientX));
+          }
+        });
+
+        const endDrag = (e) => {
+          if (dragging) {
+            dragging = false;
+            try { wrapper.releasePointerCapture(e.pointerId); } catch {}
+          }
+        };
+
+        wrapper.addEventListener('pointerup', endDrag);
+        wrapper.addEventListener('pointercancel', endDrag);
+
+        wrapper.addEventListener('pointerleave', (e) => {
+          endDrag(e);
+          if (hovering) {
+            hovering = false;
+            setTarget(DEFAULT_POSITION);
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
