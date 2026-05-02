@@ -29,15 +29,15 @@ skill = Path("skills/prd-development/SKILL.md").read_text(encoding="utf-8")
 context = "Improve onboarding completion for self-serve SMB users by Q3."
 
 prompt = f"""
-Use this PM skill exactly as your operating framework:
+严格把这个 PM skill 当作你的工作框架来使用：
 {skill}
 
-Business context:
+业务背景：
 {context}
 
-Ask up to 3 clarifying questions first.
-Then produce markdown output.
-End with assumptions, risks, and next steps.
+先提出最多 3 个澄清问题。
+然后输出 markdown 格式结果。
+最后给出 assumptions、risks 和 next steps。
 """
 
 # Send `prompt` to your model client.

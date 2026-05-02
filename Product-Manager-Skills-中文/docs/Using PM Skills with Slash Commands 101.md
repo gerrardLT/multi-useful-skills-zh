@@ -93,17 +93,17 @@ skills/ (or link to your Product-Manager-Skills clone)
 **文件：** `.claude/commands/pm-story.md`
 
 ```markdown
-Read skills/user-story/SKILL.md and apply it to write user stories for:
+阅读 skills/user-story/SKILL.md，并将其用于为以下内容编写 user stories：
 
 $ARGUMENTS
 
-For each story, produce:
-- User story in "As a / I want / So that" format
-- 2-3 Gherkin acceptance criteria (Given / When / Then)
-- Story size estimate (S/M/L)
-- Any assumptions or open questions
+对每个 story，请产出：
+- 使用 “As a / I want / So that” 格式的 user story
+- 2-3 条 Gherkin 验收标准（Given / When / Then）
+- Story 大小估算（S/M/L）
+- 任何假设或待确认问题
 
-Flag anything that looks like it needs splitting before it's sprint-ready.
+标出所有在进入 sprint 前看起来还需要继续拆分的内容。
 ```
 
 ### `/pm-prd` - 启动 PRD
@@ -111,13 +111,13 @@ Flag anything that looks like it needs splitting before it's sprint-ready.
 **文件：** `.claude/commands/pm-prd.md`
 
 ```markdown
-Read skills/prd-development/SKILL.md and begin the PRD development workflow for:
+阅读 skills/prd-development/SKILL.md，并开始为以下内容执行 PRD development workflow：
 
 $ARGUMENTS
 
-Start with Phase 1: problem statement and context.
-Ask me the questions you need before generating any sections.
-Do not skip to the solution until we've agreed on the problem.
+从 Phase 1 开始：problem statement 和 context。
+在生成任何章节之前，先向我提出你需要的问题。
+在我们就问题达成一致之前，不要跳到解决方案。
 ```
 
 ### `/pm-probe` - 设计 POL Probe
@@ -125,7 +125,7 @@ Do not skip to the solution until we've agreed on the problem.
 **文件：** `.claude/commands/pm-probe.md`
 
 ```markdown
-Read skills/pol-probe/SKILL.md and apply it to design a validation experiment for this hypothesis:
+阅读 skills/pol-probe/SKILL.md，并将其用于为这个假设设计一个验证实验：
 
 $ARGUMENTS
 ```
@@ -135,12 +135,12 @@ $ARGUMENTS
 **文件：** `.claude/commands/pm-prioritize.md`
 
 ```markdown
-Read skills/prioritization-advisor/SKILL.md and run the interactive prioritization advisor.
+阅读 skills/prioritization-advisor/SKILL.md，并运行交互式 prioritization advisor。
 
 Context: $ARGUMENTS
 
-Ask me the questions needed to recommend the right framework for my situation.
-Do not recommend a framework until you've asked at least 3 clarifying questions.
+先问我那些能帮助你为当前情况推荐正确框架的问题。
+在至少问完 3 个澄清问题之前，不要推荐任何框架。
 ```
 
 ### `/pm-epic` - 拆 Epic
@@ -148,7 +148,7 @@ Do not recommend a framework until you've asked at least 3 clarifying questions.
 **文件：** `.claude/commands/pm-epic.md`
 
 ```markdown
-Read skills/epic-breakdown-advisor/SKILL.md and apply it to split this epic:
+阅读 skills/epic-breakdown-advisor/SKILL.md，并将其用于拆分这个 epic：
 
 $ARGUMENTS
 ```
@@ -158,7 +158,7 @@ $ARGUMENTS
 **文件：** `.claude/commands/pm-problem.md`
 
 ```markdown
-Read skills/problem-statement/SKILL.md and help me frame a problem statement for:
+阅读 skills/problem-statement/SKILL.md，并帮助我为以下内容梳理一个 problem statement：
 
 $ARGUMENTS
 ```
@@ -168,7 +168,7 @@ $ARGUMENTS
 **文件：** `.claude/commands/pm-roadmap.md`
 
 ```markdown
-Read skills/roadmap-planning/SKILL.md and begin the roadmap planning workflow.
+阅读 skills/roadmap-planning/SKILL.md，并开始 roadmap planning workflow。
 
 Context: $ARGUMENTS
 ```

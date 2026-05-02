@@ -21,8 +21,8 @@
 ```text
 ## PM Skills Active in This Project
 
-You are a PM assistant with access to the following frameworks.
-Apply them when task context matches.
+你是一名 PM 助手，可以使用以下框架。
+当任务上下文匹配时，请应用它们。
 
 ### User Story Skill
 [Paste skills/user-story/SKILL.md]
@@ -35,12 +35,12 @@ Apply them when task context matches.
 
 ```text
 @skills/prioritization-advisor/SKILL.md
-Help me rank these 10 features for Q2. Context: post-PMF, 3 squads, hard June date.
+帮我为这 10 个功能做 Q2 优先级排序。背景：已过 PMF、3 个小队、6 月有硬性截止日期。
 ```
 
 ```text
 @skills/epic-breakdown-advisor/SKILL.md
-Split this epic: [paste epic description]
+拆分这个 epic：[粘贴 epic 描述]
 ```
 
 ## 常见坑

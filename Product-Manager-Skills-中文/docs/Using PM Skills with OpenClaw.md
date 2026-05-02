@@ -17,17 +17,17 @@
 3.  从一个 skill 路径开始：
 
 ```text
-Use skills/prioritization-advisor/SKILL.md to guide framework selection for our roadmap tradeoffs. Ask questions one at a time, then provide numbered recommendations.
+使用 skills/prioritization-advisor/SKILL.md 来指导我们 roadmap 权衡中的框架选择。每次只问一个问题，然后给出编号形式的建议。
 ```
 
 ## 第一个高价值 Prompt
 
 ```text
-Using skills/problem-framing-canvas/SKILL.md, help me frame our onboarding drop-off problem before proposing solutions.
+使用 skills/problem-framing-canvas/SKILL.md，在提出解决方案之前，先帮助我梳理我们的 onboarding 流失问题。
 ```
 
 ```text
-Run commands/discover.md for: reduce activation drop-off for self-serve SMB users.
+运行 commands/discover.md，主题是：降低自助型 SMB 用户的激活流失率。
 ```
 
 ## 如何保持输出质量
